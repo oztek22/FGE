@@ -21,6 +21,10 @@ import { RadioComponent } from './components/questions/radio/radio.component';
 import { DropdownTextComponent } from './components/questions/dropdown-text/dropdown-text.component';
 import { CalendarDurationComponent } from './components/questions/calendar-duration/calendar-duration.component';
 import { UploadFileComponent } from './components/questions/upload-file/upload-file.component';
+import { HeaderComponent } from './header/header.component';
+import { SubHeaderComponent } from './sub-header/sub-header.component';
+import { MenuTabComponent } from './menu-tab/menu-tab.component';
+import { WhsDashboardComponent } from './home/whs-dashboard/whs-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +47,11 @@ import { UploadFileComponent } from './components/questions/upload-file/upload-f
     RadioComponent,
     DropdownTextComponent,
     CalendarDurationComponent,
-    UploadFileComponent
+    UploadFileComponent,
+    HeaderComponent,
+    SubHeaderComponent,
+    MenuTabComponent,
+    WhsDashboardComponent
   ],
   imports: [
     BrowserModule

@@ -1,1 +1,158 @@
 /* You can add global styles to this file, and also import other style files */
+/*-----------------------------Import Fonts Start--------------------------------------*/
+
+@font-face {
+  font-family: "Avenir-Roman";
+  src: url("assets/fonts/Avenir-Roman.eot?#iefix") format("embedded-opentype"),
+    url("assets/fonts/Avenir-Roman.woff") format("woff"),
+    url("assets/fonts/Avenir-Roman.ttf") format("truetype"),
+    url("assets/fonts/Avenir-Roman.svg#Avenir-Roman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro-Regular";
+  src: url("assets/fonts/AvenirNextLTPro-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype"),
+    url("assets/fonts/AvenirNextLTPro-Regular.woff") format("woff"),
+    url("assets/fonts/AvenirNextLTPro-Regular.ttf") format("truetype"),
+    url("assets/fonts/AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro-Demi";
+  src: url("assets/fonts/AvenirNextLTPro-Demi.eot?#iefix") format("embedded-opentype"),
+    url("assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype"),
+    url("assets/fonts/AvenirNextLTPro-Demi.woff") format("woff"),
+    url("assets/fonts/AvenirNextLTPro-Demi.ttf") format("truetype"),
+    url("assets/fonts/AvenirNextLTPro-Demi.svg#AvenirNextLTPro-Demi") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*-----------------------------Import Fonts End--------------------------------------*/
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  font-family: "Avenir-Roman";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0px;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: "AvenirNextLTPro-Regular";
+  line-height: 28px;
+}
+
+.fixed-width {
+  width: 100%;
+  max-width: 1120px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+.align-right {
+  text-align: right !important;
+}
+
+/*-----------------------------Outline Button Med start--------------------------------------*/
+
+button.outline-btn-med {
+  font-size: 14px;
+  background: #fff;
+  border: 1px solid #c2c2cc;
+  height: 35px;
+  padding: 0px 24px;
+  border-radius: 4px;
+  font-family: "AvenirNextLTPro-Demi";
+  color: #0096ff;
+  margin: 0px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button.outline-btn-med:hover {
+  color: #fff;
+  background: #0096ff;
+  border: 1px solid #0096ff;
+}
+
+/*-----------------------------Outline Button Med end--------------------------------------*/
+
+/*-----------------------------Page title with button Start--------------------------------------*/
+
+.page-heading-with-btn {
+  padding: 0px 0px 40px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-sub-heading {
+  font-size: 12px;
+}
+
+.page-sub-heading {
+  display: flex;
+  color: #212125;
+  align-items: center;
+  padding: 4px 0px 0px 0px;
+}
+
+.sub-heading-ovel {
+  height: 4px;
+  width: 4px;
+  border-radius: 100px;
+  background: #c2c2cc;
+  margin: 0px 7px;
+}
+
+.page-heading-btn {
+  display: flex;
+}
+
+.page-heading-btn button {
+  margin: 0px 0px 0px 20px;
+}
+
+/*-----------------------------Page title with button End--------------------------------------*/

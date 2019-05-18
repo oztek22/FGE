@@ -1,0 +1,37 @@
+/*-----------------------------Page title with button Start--------------------------------------*/
+
+.page-heading-with-btn {
+  padding: 0px 0px 40px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-sub-heading {
+  font-size: 12px;
+}
+
+.page-sub-heading {
+  display: flex;
+  color: #212125;
+  align-items: center;
+  padding: 4px 0px 0px 0px;
+}
+
+.sub-heading-ovel {
+  height: 4px;
+  width: 4px;
+  border-radius: 100px;
+  background: #c2c2cc;
+  margin: 0px 7px;
+}
+
+.page-heading-btn {
+  display: flex;
+}
+
+.page-heading-btn button {
+  margin: 0px 0px 0px 20px;
+}
+
+/*-----------------------------Page title with button End--------------------------------------*/

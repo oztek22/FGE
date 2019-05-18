@@ -1,0 +1,149 @@
+/*
+    font-family: 'Avenir-Roman';
+    font-family: 'AvenirNextLTPro-Regular';
+*/
+
+.whs-dashboard-block {
+  background: #ebf7ff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0px 0px 56px 0px;
+}
+
+.whs-dashboard-block h2 {
+  font-family: "AvenirNextLTPro-Demi";
+  font-size: 22px;
+  line-height: 30px;
+  display: block;
+  padding: 0px 0px 36px 0px;
+}
+
+.whs-dashboard-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.whs-dashboard-col-one {
+  flex: 0 0 48%;
+}
+
+.whs-dashboard-block h3 {
+  padding: 0px 0px 18px 0px;
+}
+
+.two-col-table {
+  padding: 0px 0px 10px 0px;
+}
+
+.two-col-table-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0px 17px 0px;
+}
+
+.two-col-table-label {
+  font-family: "Avenir-Roman";
+  color: #757585;
+  font-size: 16px;
+  font-weight: normal;
+  flex: 1 1 auto;
+}
+
+.two-col-table-value {
+  font-family: "AvenirNextLTPro-Demi";
+  color: #212125;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 0px 0px 0px 20px;
+}
+
+.four-col-table-row {
+  display: flex;
+  border-top: 1px solid #ededf0;
+  padding: 16px 0px;
+}
+
+.four-col-table-row:first-child {
+  border: none;
+}
+
+.four-col-table-row.four-col-table-heading-row {
+  font-size: 12px;
+  align-items: flex-end;
+  font-family: "AvenirNextLTPro-Demi";
+  color: #aaa7b5;
+}
+.four-col-table-col-one {
+  flex: 0 0 42%;
+  padding: 0px 20px 0px 0px;
+}
+
+.four-col-table-col-two {
+  flex: 0 0 24%;
+  text-align: center;
+  padding: 0px 10px 0px 0px;
+}
+
+.four-col-table-col-three {
+  flex: 0 0 18%;
+  text-align: center;
+  padding: 0px 10px 0px 0px;
+}
+
+.four-col-table-col-four {
+  flex: 0 0 16%;
+  text-align: center;
+}
+
+.four-col-table-row {
+  color: #212126;
+}
+
+.three-col-table-type-one {
+}
+
+.three-col-table-type-one .three-col-table-heading-row {
+  display: flex;
+  font-size: 12px;
+  align-items: flex-end;
+  font-family: "AvenirNextLTPro-Demi";
+  color: #aaa7b5;
+  padding: 0px 0px 10px 0px;
+}
+
+.three-col-table-type-one .three-col-table-col-one {
+  flex: 0 0 40%;
+}
+
+.three-col-table-type-one .three-col-table-col-two {
+  flex: 0 0 30%;
+  padding: 0px 10px 0px 0px;
+}
+
+.three-col-table-type-one .three-col-table-col-three {
+  flex: 0 0 30%;
+}
+
+.three-col-table-type-one .three-col-table-row {
+  display: flex;
+  padding: 0px 0px 18px 0px;
+}
+
+.three-col-table-type-one .three-col-table-col-one {
+  color: #757585;
+}
+
+.three-col-table-type-one .large_table_content {
+  align-items: center;
+  padding: 0px;
+}
+
+.three-col-table-type-one .large_table_content .three-col-table-col-one {
+  font-size: 17px;
+}
+
+.three-col-table-type-one .large_table_content .three-col-table-col-two,
+.three-col-table-type-one .large_table_content .three-col-table-col-three {
+  font-size: 18px;
+  font-family: "AvenirNextLTPro-Demi";
+}

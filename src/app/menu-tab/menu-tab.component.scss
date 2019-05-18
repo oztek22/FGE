@@ -1,0 +1,60 @@
+/*
+    font-family: 'Avenir-Roman';
+    font-family: 'AvenirNextLTPro-Regular';
+*/
+
+.primary-tabs-block {
+  overflow: hidden;
+  width: 100%;
+}
+
+.primary-tabs {
+  width: 100%;
+  overflow: auto;
+  padding: 0px 0px 34px 0px;
+}
+
+.primary-tabs ul {
+  display: flex;
+  min-width: 1080px;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid #ededf0;
+  font-size: 14px;
+}
+
+.primary-tabs ul li {
+  font-family: "AvenirNextLTPro-Regular";
+  font-size: 14px;
+  list-style: none;
+  /* padding: 15px 19px; */
+  padding: 0px;
+  border-bottom: 2px solid transparent;
+}
+
+.primary-tabs ul li:hover {
+  background: #ebf7ff;
+}
+
+.primary-tabs ul li:hover a {
+  color: #212125;
+}
+
+.primary-tabs ul li.active {
+  background: #ebf7ff;
+  border-bottom: 2px solid #0096ff;
+}
+
+.primary-tabs ul li a,
+.primary-tabs ul li span {
+  cursor: pointer;
+  color: #8f8f9c;
+  display: block;
+  padding: 15px 19px;
+  transition: all 0.3s ease;
+}
+
+.primary-tabs ul li.active a,
+.primary-tabs ul li.active span {
+  font-family: "AvenirNextLTPro-Demi";
+  color: #212125;
+}
