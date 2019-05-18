@@ -1,0 +1,113 @@
+{
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true
+    },
+    "parser": "typescript-eslint-parser",
+    "plugins": [
+        "promise",
+        "typescript"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:promise/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-unused-vars": "off",
+        "typescript/no-unused-vars": "error",
+        "no-extra-parens": "error",
+        "no-async-promise-executor": "error",
+        "no-await-in-loop": "warn",
+        "no-misleading-character-class": "warn",
+        "no-template-curly-in-string": "error",
+        "require-atomic-updates": "warn",
+        "accessor-pairs": "error",
+        "array-callback-return": "error",
+        "block-scoped-var": "error",
+        "class-methods-use-this": "off",
+        "complexity": [
+            "error",
+            10
+        ],
+        "consistent-return": "error",
+        "curly": "error",
+        "default-case": "error",
+        "dot-location": [
+            "error",
+            "property"
+        ],
+        "dot-notation": "error",
+        "eqeqeq": "error",
+        "guard-for-in": "error",
+        "max-classes-per-file": [
+            "error",
+            1
+        ],
+        "no-alert": "error",
+        "no-caller": "error",
+        "no-else-return": "error",
+        "no-empty-function": "off",
+        "no-multi-spaces": "error",
+        "strict": [
+            "error",
+            "global"
+        ],
+        "prefer-const": "error",
+        "no-confusing-arrow": "error",
+        "no-var": "warn",
+        "no-console": "warn",
+        "no-lonely-if": "error",
+        "handle-callback-err": "error",
+        "multiline-comment-style": [
+            "error",
+            "starred-block"
+        ],
+        "max-lines": [
+            "error",
+            500
+        ],
+        "max-len": [
+            "error",
+            120
+        ],
+        "max-lines-per-function": [
+            "error",
+            {
+                "max": 50,
+                "skipBlankLines": true,
+                "skipComments": true
+            }
+        ],
+        "max-statements": [
+            "error",
+            {
+                "max": 40
+            }
+        ],
+        "max-depth": [
+            "error",
+            4
+        ],
+        "indent": [
+            "error",
+						2
+        ],
+        "quotes": [
+            "error",
+            "single",
+            {
+                "allowTemplateLiterals": true,
+                "avoidEscape": true
+            }
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
+}
