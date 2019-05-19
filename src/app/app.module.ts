@@ -28,6 +28,7 @@ import { BarChartGridComponent } from './components/charts/bar-chart-grid/bar-ch
 import { AppRoutingModule } from './app-routing.module';
 import { VerticalBarComponent } from './components/charts/vertical-bar/vertical-bar.component';
 import { VerticalTotalBarChartComponent } from './components/charts/vertical-total-bar-chart/vertical-total-bar-chart.component';
+import { VerticalBarGridComponent } from './components/charts/vertical-bar-grid/vertical-bar-grid.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { VerticalTotalBarChartComponent } from './components/charts/vertical-tot
     WhsDashboardComponent,
     BarChartGridComponent,
     VerticalBarComponent,
-    VerticalTotalBarChartComponent
+    VerticalTotalBarChartComponent,
+    VerticalBarGridComponent
   ],
   imports: [
     BrowserModule,
