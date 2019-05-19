@@ -1,15 +1,110 @@
-.bar-chart-text-row{
+@import "../../../../variables.scss";
+.bar-chart-text-row {
+  display: flex;
+  align-items: center;
+  padding: 0 0 15px;
+}
+.bar-chart-container{
   display: flex;
   align-items: center;
 }
-.chart-dot{
-  height:10px;
-  width:10px;
+.chart-dot {
+  height: 10px;
+  width: 10px;
   border-radius: 3px;
 }
-.chart-sub-text{
+.high {
+  background: $cerulean;
+}
+.medium {
+  background: $azure;
+}
+.small {
+  background: $sky-blue;
+}
+.extrasmall {
+  background: $ice-blue-two;
+}
+.chart-sub-text {
   font-size: 14px;
-  color:#757585;
+  color: $black-2;
   font-family: "AvenirNextLTPro-Regular";
-  padding:0 0 0 20px;
+  padding: 0 0 0 20px;
+}
+
+.bar-chart-column {
+  flex: 0 0 150px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.bar-chart-inner {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  height: 125px;
+}
+.bar-chart-thumb-container{
+  display: flex;
+  align-items: flex-end;
+  padding: 0 17px;
+  border-left: 1px solid $black-5;
+  border-bottom: 1px solid $black-5;
+}
+.bar-inner-text {
+  font-size: 10px;
+  font-family: "AvenirNextLTPro-Demi";
+  color: $black-2;
+  text-align: center;
+  padding:0 0 2px;
+}
+.bar-inner-column{
+  height: 102px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.line-graph{
+  width:23px;
+  height: 60%;
+}
+.bar-inner-subtext{
+  font-size: 8px;
+  font-family: "AvenirNextLTPro-Demi";
+  color: #8f8f9c;
+  padding-bottom:2px;
+  text-align: center;
+}
+.bar-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0 0 0 8px;
+  &:first-child{
+    margin:0;
+  }
+}
+.bar-chart-text-column{
+  padding:0 0 0 28px;
+}
+.year-text{
+  color:$dark-grey-two;
+  font-size: 18px;
+}
+.year-percentage{
+  font-size: 18px;
+  font-family: "AvenirNextLTPro-Demi";
+}
+.bar-chart-bottom-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:17px 0 0;
+}
+.total-text{
+  font-size: 14px;
+  color:$black-2;
+  font-family: "Avenir-Roman";
+  padding:2px 0 0;
+  text-align: center;
 }
