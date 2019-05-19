@@ -1,0 +1,11 @@
+.vertical-bar-grid{
+  display: flex;
+  margin:0 -8px;
+}
+.vertical-bar-items{
+  flex:1 1 auto;
+  padding:0 8px;
+  &:first-child{
+    flex:0 0 322px;
+  }
+}

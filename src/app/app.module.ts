@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TableComponent } from './components/table/table.component';
 import { BarChartComponent } from './components/charts/bar-chart/bar-chart.component';
-import { PieChartComponent } from './components/charts/pie-chart/pie-chart.component';
 import { StatusTrackerComponent } from './components/charts/status-tracker/status-tracker.component';
 import { ActionTrackerComponent } from './action-tracker/action-tracker.component';
 import { SlackMainComponent } from './components/slack/slack-main/slack-main.component';
@@ -29,6 +28,9 @@ import { BarChartGridComponent } from './components/charts/bar-chart-grid/bar-ch
 import { AppRoutingModule } from './app-routing.module';
 import { DatamanagementComponent } from './components/datamanagement/datamanagement.component';
 import { AcquisitionstrategyComponent } from './components/acquisitionstrategy/acquisitionstrategy.component';
+import { VerticalBarComponent } from './components/charts/vertical-bar/vertical-bar.component';
+import { VerticalTotalBarChartComponent } from './components/charts/vertical-total-bar-chart/vertical-total-bar-chart.component';
+import { VerticalBarGridComponent } from './components/charts/vertical-bar-grid/vertical-bar-grid.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,6 @@ import { AcquisitionstrategyComponent } from './components/acquisitionstrategy/a
     HomeComponent,
     TableComponent,
     BarChartComponent,
-    PieChartComponent,
     StatusTrackerComponent,
     ActionTrackerComponent,
     SlackMainComponent,
@@ -58,7 +59,10 @@ import { AcquisitionstrategyComponent } from './components/acquisitionstrategy/a
     WhsDashboardComponent,
     BarChartGridComponent,
     DatamanagementComponent,
-    AcquisitionstrategyComponent
+    AcquisitionstrategyComponent,
+    VerticalBarComponent,
+    VerticalTotalBarChartComponent,
+    VerticalBarGridComponent
   ],
   imports: [
     BrowserModule,

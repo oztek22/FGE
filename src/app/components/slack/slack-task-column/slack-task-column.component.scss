@@ -1,0 +1,41 @@
+.slack_new_task__main_card {
+  background: #f5fbff;
+  padding: 10px;
+
+  .slack_new_task__title_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 10px 6px;
+
+  }
+
+  .slack_new_task__title {
+    font-family: "AvenirNextLTPro-Demi";
+    flex: 1 1 auto;
+    font-size: 16px;
+    font-style: normal;
+  }
+  .task_list_card_add_btn
+  {
+    padding: 2px 0px 0px 0px;
+    button
+    {
+      font-family: "AvenirNextLTPro-Demi";
+      background: url("../../../../assets/images/btn-plus.svg") 8px 7px no-repeat;
+      cursor: pointer;
+      color: #aaa7b5;
+      border:none;
+      padding: 6px 19px 6px 26px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+
+      &:hover
+      {
+        background: url("../../../../assets/images/btn-plus.svg") 8px 7px no-repeat #FFF; 
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,15 @@
+@import "../../variables.scss";
+.chart-section{
+  padding-top:80px;
+}
+.chart-bottom-padding{
+  padding-bottom:28px;
+}
+.section-title{
+  padding-bottom: 38px;
+  font-size: 20px;
+  font-family: "AvenirNextLTPro-Demi";
+  h3{
+    color:$dark-grey-two;
+  }
+}
