@@ -1,0 +1,18 @@
+.slack_new_task__main_card {
+  background: #f5fbff;
+  padding: 10px;
+
+  .slack_new_task__title_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 0px 6px;
+  }
+
+  .slack_new_task__title {
+    font-family: "AvenirNextLTPro-Demi";
+    flex: 1 1 auto;
+    font-size: 16px;
+    font-style: normal;
+  }
+}
