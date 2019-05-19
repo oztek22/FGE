@@ -6,7 +6,7 @@
 }
 .bar-chart-container{
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 .chart-dot {
   height: 10px;
@@ -34,15 +34,14 @@
 }
 
 .bar-chart-column {
-  flex: 0 0 150px;
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
+  align-items: center;
 }
 .bar-chart-inner {
   display: flex;
   width: 100%;
   align-items: flex-end;
+  flex: 0 0 150px;
 }
 .bar-chart-thumb-container{
   display: flex;
@@ -103,12 +102,12 @@
   align-items: center;
   padding:17px 0 0;
 }
-.total-text{
+.vertical-total-text{
   font-size: 14px;
   color:$black-2;
   font-family: "Avenir-Roman";
   padding:2px 0 0;
-  text-align: center;
+  text-align: left;
 }
 .bar-chart-text-detail{
   flex:1 1 auto;
@@ -119,4 +118,10 @@
   top: 0;
   right: -25px;
   transform: rotate(90deg);
+}
+.vertical-right-text{
+  padding:0 0 0 43px;
+}
+.vertical-bar-chart-text-column{
+  padding: 32px 0 0 0;
 }

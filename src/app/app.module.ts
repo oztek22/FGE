@@ -27,6 +27,8 @@ import { MenuTabComponent } from './menu-tab/menu-tab.component';
 import { WhsDashboardComponent } from './home/whs-dashboard/whs-dashboard.component';
 import { BarChartGridComponent } from './components/charts/bar-chart-grid/bar-chart-grid.component';
 import { AppRoutingModule } from './app-routing.module';
+import { VerticalBarComponent } from './components/charts/vertical-bar/vertical-bar.component';
+import { VerticalTotalBarChartComponent } from './components/charts/vertical-total-bar-chart/vertical-total-bar-chart.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { AppRoutingModule } from './app-routing.module';
     SubHeaderComponent,
     MenuTabComponent,
     WhsDashboardComponent,
-    BarChartGridComponent
+    BarChartGridComponent,
+    VerticalBarComponent,
+    VerticalTotalBarChartComponent
   ],
   imports: [
     BrowserModule,
