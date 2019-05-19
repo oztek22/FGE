@@ -52,8 +52,11 @@ body {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -moz-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility !important;
+-webkit-font-smoothing: antialiased !important;
 }
 
 img {
@@ -155,6 +158,30 @@ button.outline-btn-med:hover {
 
 .page-heading-btn button {
   margin: 0px 0px 0px 20px;
+}
+
+.heading_with_edit
+{
+  display: flex;
+  align-items: center;
+
+  h2
+  {
+    padding: 0px 14px 0px 0px;
+    color: #212125;
+  }
+
+  .heading_edit
+  {
+    color: #0096ff;
+    font-size: 14px;
+    font-family: "AvenirNextLTPro-Demi";
+
+    span
+    {
+      padding: 0px 0px 0px 6px;
+    }
+  }
 }
 
 @media (max-width: 1120px) {

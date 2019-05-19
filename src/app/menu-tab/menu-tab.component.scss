@@ -55,8 +55,8 @@
   padding: 14px 19px;
 }
 
-.primary-tabs ul li.active a,
-.primary-tabs ul li.active span {
+.primary-tabs ul li a.primary-tabs,
+.primary-tabs ul li span.active {
   font-family: "AvenirNextLTPro-Demi";
   color: #212125;
 }

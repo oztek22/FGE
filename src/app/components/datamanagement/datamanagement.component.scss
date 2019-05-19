@@ -1,0 +1,47 @@
+.back_to_page {
+  background: url("../../../assets/images/back-long-arrow.png") 0px 3px
+    no-repeat;
+  padding: 0px 0px 16px 22px;
+  font-family: "AvenirNextLTPro-Regular";
+  font-size: 14px;
+  color: #0096ff;
+}
+
+.data_management_main {
+  background: #ebf7ff;
+  padding: 32px;
+  margin: 0px 0px 57px 0px;
+
+  .data_management_ID
+  {
+    color: #212125;
+    font-size: 16px;
+    font-family: "Avenir-Roman";
+    padding: 5px 0px 23px 0px;
+  }
+
+  .two_col_list
+  {
+    .two_col_list_row
+    {
+      display: flex;
+      padding: 7px 0px 7px 0px;
+
+      .two_col_list_label
+      {
+        flex: 0 0 190px;
+        color: #757585;
+        font-size: 16px;
+        font-family: "AvenirNextLTPro-Regular";
+      }
+
+      .two_col_list_value
+      {
+        flex: 1 1 auto;
+        color: #212125;
+        font-size: 16px;
+      }
+    }
+    
+  }
+}
