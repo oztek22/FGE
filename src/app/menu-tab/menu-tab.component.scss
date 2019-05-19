@@ -28,7 +28,7 @@
   list-style: none;
   /* padding: 15px 19px; */
   padding: 0px;
-  border-bottom: 2px solid transparent;
+  // border-bottom: 2px solid transparent;
 }
 
 .primary-tabs ul li:hover {
@@ -39,10 +39,6 @@
   color: #212125;
 }
 
-.primary-tabs ul li.active {
-  background: #ebf7ff;
-  border-bottom: 2px solid #0096ff;
-}
 
 .primary-tabs ul li a,
 .primary-tabs ul li span {
@@ -51,6 +47,12 @@
   display: block;
   padding: 15px 19px;
   transition: all 0.3s ease;
+}
+
+.primary-tabs ul li a.active {
+  background: #ebf7ff;
+  border-bottom: 2px solid #0096ff;
+  padding: 14px 19px;
 }
 
 .primary-tabs ul li.active a,
