@@ -1,0 +1,21 @@
+.main_tasks_section {
+  width: 100%;
+  overflow: hidden;
+  padding: 0px 0px 100px 0px;
+  .main_tasks_section_inner {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .main_tasks_col
+  {
+    flex: 0 0 23.5%;
+  }
+
+  .main_tasks_section_button
+  {
+    text-align: right;
+    padding: 0px 0px 28px 0px;
+  }
+}

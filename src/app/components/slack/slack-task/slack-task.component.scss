@@ -1,0 +1,106 @@
+.slack_new_task__main_card {
+  background: #f5fbff;
+  padding: 10px;
+
+  .slack_new_task__title_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 10px 6px;
+
+  }
+
+  .slack_new_task__title {
+    font-family: "AvenirNextLTPro-Demi";
+    flex: 1 1 auto;
+    font-size: 16px;
+    font-style: normal;
+  }
+
+  .task_list_card {
+    background: #fff;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    margin: 0px 0px 8px 0px;
+
+    &:hover
+    {
+      border: 1px solid #0096ff;
+    }
+  }
+
+  .task_list_card_meta_row {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0px 0px 0px;
+    align-items: center;
+  }
+
+  .task_list_card_title {
+    font-family: "Avenir-Roman";
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .task_list_card_meta_date
+  {
+    font-family: "Avenir-Roman";
+    color: #aaa7b5;
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  .task_list_card_meta_user
+  {
+    display: flex;   
+
+    span
+    {
+      cursor: pointer;
+      height: 24px;
+      width: 24px;
+      border:2px solid #fff;
+      border-radius: 100px;
+      overflow: hidden;
+      margin: 0px -10px 0px 0px;
+
+      &:last-child
+      {
+        margin: 0px;
+      }
+
+      img
+      {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .task_list_card_add_btn
+  {
+    padding: 2px 0px 0px 0px;
+    button
+    {
+      font-family: "AvenirNextLTPro-Demi";
+      background: url("../../../../assets/images/btn-plus.svg") 8px 7px no-repeat;
+      cursor: pointer;
+      color: #aaa7b5;
+      border:none;
+      padding: 6px 19px 6px 26px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+
+      &:hover
+      {
+        background: url("../../../../assets/images/btn-plus.svg") 8px 7px no-repeat #FFF; 
+      }
+    }
+  }
+
+
+}
