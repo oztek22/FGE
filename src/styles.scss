@@ -205,7 +205,7 @@ button.outline-btn-med:hover {
   height: 35px;
   border-radius: 4px;
   transition: all 0.3s ease;
-
+  font-size: 14px;
   &:hover {
     background: url("assets/images/btn-plus-white.svg") 20px 10px no-repeat
       #087ed1;
@@ -222,6 +222,7 @@ button.outline-btn-med:hover {
   height: 35px;
   border-radius: 4px;
   transition: all 0.3s ease;
+  font-size: 14px;
 
   &:hover {
     background: #0096ff;
