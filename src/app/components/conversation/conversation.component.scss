@@ -1,0 +1,161 @@
+.Conversations_mian_section {
+
+  .Conversations_section_title
+  {
+    padding: 0px 0px 32px 0px;
+  }
+  .Conversations_section_block {
+    display: flex;
+    border: 1px solid #ededf0;
+    height: 530px;
+  }
+
+  .Conversations_section_topics_col {
+    flex: 0 0 200px;
+    background: #f5fbff;
+  }
+
+  .Conversations_section_col {
+    padding: 0px 0px 22px 22px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .Conversations_messages_main
+  {
+    flex: 1 1 auto;
+    overflow: auto;
+    padding: 0px 22px 0px 0px;
+    margin-bottom: 10px;
+  }
+
+  .Conversations_message {
+    display: flex;
+    padding: 12px 0px;
+  }
+
+  .Conversations_user {
+    flex: 0 0 36px;
+  }
+
+  .Conversations_user_photo {
+    height: 24px;
+    width: 24px;
+    overflow: hidden;
+    border-radius: 100px;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .Conversations_message_user_meta {
+    font-family: "AvenirNextLTPro-Demi";
+    font-size: 14px;
+    color: #212125;
+
+    span {
+      font-family: "AvenirNextLTPro-Regular";
+      font-size: 12px;
+      color: #757585;
+    }
+  }
+
+  .Conversations_message_text {
+    font-family: "Avenir-Roman";
+    font-size: 14px;
+    color: #757585;
+    padding: 4px 0px 0px 0px;
+
+    span {
+      color: #0096ff;
+      font-family: "AvenirNextLTPro-Demi";
+    }
+  }
+
+  .Conversations_date_stamp {
+    text-align: center;
+    position: relative;
+    padding: 5px 0px 10px 0px;
+    .Conversations_date_stamp_inner {
+      position: absolute;
+      top: 15px;
+      left: 0px;
+      width: 100%;
+      border-bottom: 1px solid #ededf0;
+    }
+
+    em {
+      position: relative;
+      z-index: 10;
+      display: inline-block;
+      background: #fff;
+      color: #212125;
+      font-size: 12px;
+      padding: 0px 10px;
+    }
+  }
+
+  .Conversations_message_textare
+  {
+    padding: 0px 22px 0px 0px;
+    textarea
+    {
+      font-family: "Avenir-Roman";
+      color: #494950;
+      font-weight: normal;
+      width: 100%;
+      font-size: 14px;
+      height: 35px;
+      padding: 7px 0px 7px 10px;
+      border: 1px solid #d8d8d8;
+      resize: none;
+      border-radius: 4px;
+    }
+  }
+
+  .Conversations_section_topics_col_inner
+  {
+    ul
+    {
+      margin: 0px;
+      padding: 0px 18px 0px 18px;
+      li
+      {
+        list-style: none;
+        font-family: "Avenir-Roman";
+        font-size: 16px;
+        padding: 0px 0px 14px 0px;
+
+        &.visited
+        {
+          font-family: "AvenirNextLTPro-Demi";
+        }
+
+        &.active
+        {
+          font-family: "AvenirNextLTPro-Demi";
+          color: #0096ff;
+        }
+      }
+      
+    }
+  }
+
+  .Conversations_section_topics_heading
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 12px 21px 18px;
+  }
+
+  h2
+  {
+    font-size: 16px;
+    font-family: "AvenirNextLTPro-Demi";
+  }
+}

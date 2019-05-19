@@ -26,11 +26,13 @@
 
 @font-face {
   font-family: "AvenirNextLTPro-Demi";
-  src: url("assets/fonts/AvenirNextLTPro-Demi.eot?#iefix") format("embedded-opentype"),
+  src: url("assets/fonts/AvenirNextLTPro-Demi.eot?#iefix")
+      format("embedded-opentype"),
     url("assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype"),
     url("assets/fonts/AvenirNextLTPro-Demi.woff") format("woff"),
     url("assets/fonts/AvenirNextLTPro-Demi.ttf") format("truetype"),
-    url("assets/fonts/AvenirNextLTPro-Demi.svg#AvenirNextLTPro-Demi") format("svg");
+    url("assets/fonts/AvenirNextLTPro-Demi.svg#AvenirNextLTPro-Demi")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -155,9 +157,25 @@ button.outline-btn-med:hover {
   margin: 0px 0px 0px 20px;
 }
 
-@media (max-width:1120px){
-.fixed-width{
-  width:1120px;
-}
+@media (max-width: 1120px) {
+  .fixed-width {
+    width: 1120px;
+  }
 }
 /*-----------------------------Page title with button End--------------------------------------*/
+
+.blue_btn_icon {
+  cursor: pointer;
+  background: url("assets/images/btn-plus-white.svg") 20px 10px no-repeat #0096ff;
+  font-family: "AvenirNextLTPro-Demi";
+  color: #fff;
+  border: none;
+  padding: 0px 20px 0px 42px;
+  height: 35px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+
+  &:hover{
+    background: url("assets/images/btn-plus-white.svg") 20px 10px no-repeat #087ed1;
+  }
+}
