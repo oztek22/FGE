@@ -56,7 +56,7 @@ body {
   -moz-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   text-rendering: optimizeLegibility !important;
--webkit-font-smoothing: antialiased !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 img {
@@ -160,25 +160,28 @@ button.outline-btn-med:hover {
   margin: 0px 0px 0px 20px;
 }
 
-.heading_with_edit
-{
+.heading_with_edit {
   display: flex;
   align-items: center;
 
-  h2
-  {
+  h2 {
     padding: 0px 14px 0px 0px;
+    font-size: 24px;
     color: #212125;
   }
 
-  .heading_edit
-  {
+  h3 {
+    padding: 0px 14px 0px 0px;
+    font-size: 20px;
+    color: #212125;
+  }
+
+  .heading_edit {
     color: #0096ff;
     font-size: 14px;
     font-family: "AvenirNextLTPro-Demi";
 
-    span
-    {
+    span {
       padding: 0px 0px 0px 6px;
     }
   }
@@ -193,7 +196,8 @@ button.outline-btn-med:hover {
 
 .blue_btn_icon {
   cursor: pointer;
-  background: url("assets/images/btn-plus-white.svg") 20px 10px no-repeat #0096ff;
+  background: url("assets/images/btn-plus-white.svg") 20px 10px no-repeat
+    #0096ff;
   font-family: "AvenirNextLTPro-Demi";
   color: #fff;
   border: none;
@@ -202,7 +206,24 @@ button.outline-btn-med:hover {
   border-radius: 4px;
   transition: all 0.3s ease;
 
-  &:hover{
-    background: url("assets/images/btn-plus-white.svg") 20px 10px no-repeat #087ed1;
+  &:hover {
+    background: url("assets/images/btn-plus-white.svg") 20px 10px no-repeat
+      #087ed1;
+  }
+}
+
+.secondary_blue_btn {
+  cursor: pointer;
+  background: #0096ff;
+  font-family: "AvenirNextLTPro-Demi";
+  color: #fff;
+  border: none;
+  padding: 0px 20px 0px 20px;
+  height: 35px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #0096ff;
   }
 }
