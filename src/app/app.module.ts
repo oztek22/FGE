@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TableComponent } from './components/table/table.component';
 import { BarChartComponent } from './components/charts/bar-chart/bar-chart.component';
-import { PieChartComponent } from './components/charts/pie-chart/pie-chart.component';
 import { StatusTrackerComponent } from './components/charts/status-tracker/status-tracker.component';
 import { ActionTrackerComponent } from './action-tracker/action-tracker.component';
 import { SlackMainComponent } from './components/slack/slack-main/slack-main.component';
@@ -36,7 +35,6 @@ import { VerticalTotalBarChartComponent } from './components/charts/vertical-tot
     HomeComponent,
     TableComponent,
     BarChartComponent,
-    PieChartComponent,
     StatusTrackerComponent,
     ActionTrackerComponent,
     SlackMainComponent,
