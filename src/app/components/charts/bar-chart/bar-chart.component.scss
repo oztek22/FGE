@@ -1,8 +1,8 @@
 @import "../../../../variables.scss";
 .bar-chart-text-row {
   display: flex;
-  align-items: center;
   padding: 0 0 15px;
+  align-items: center;
 }
 .bar-chart-container{
   display: flex;
@@ -86,6 +86,7 @@
 }
 .bar-chart-text-column{
   padding:0 0 0 28px;
+  flex: 1 1 auto;
 }
 .year-text{
   color:$dark-grey-two;
@@ -107,4 +108,8 @@
   font-family: "Avenir-Roman";
   padding:2px 0 0;
   text-align: center;
+}
+.bar-chart-text-detail{
+  flex:1 1 auto;
+  display: flex;
 }
