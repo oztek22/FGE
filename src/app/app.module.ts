@@ -26,6 +26,8 @@ import { MenuTabComponent } from './menu-tab/menu-tab.component';
 import { WhsDashboardComponent } from './home/whs-dashboard/whs-dashboard.component';
 import { BarChartGridComponent } from './components/charts/bar-chart-grid/bar-chart-grid.component';
 import { AppRoutingModule } from './app-routing.module';
+import { DatamanagementComponent } from './components/datamanagement/datamanagement.component';
+import { AcquisitionstrategyComponent } from './components/acquisitionstrategy/acquisitionstrategy.component';
 import { VerticalBarComponent } from './components/charts/vertical-bar/vertical-bar.component';
 import { VerticalTotalBarChartComponent } from './components/charts/vertical-total-bar-chart/vertical-total-bar-chart.component';
 import { VerticalBarGridComponent } from './components/charts/vertical-bar-grid/vertical-bar-grid.component';
@@ -58,6 +60,8 @@ import { AcqProcessBlockComponent } from './components/process/acq-process-block
     MenuTabComponent,
     WhsDashboardComponent,
     BarChartGridComponent,
+    DatamanagementComponent,
+    AcquisitionstrategyComponent,
     VerticalBarComponent,
     VerticalTotalBarChartComponent,
     VerticalBarGridComponent,
