@@ -1,0 +1,15 @@
+.bar-chart-text-row{
+  display: flex;
+  align-items: center;
+}
+.chart-dot{
+  height:10px;
+  width:10px;
+  border-radius: 3px;
+}
+.chart-sub-text{
+  font-size: 14px;
+  color:#757585;
+  font-family: "AvenirNextLTPro-Regular";
+  padding:0 0 0 20px;
+}
