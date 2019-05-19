@@ -25,6 +25,7 @@ import { HeaderComponent } from './header/header.component';
 import { SubHeaderComponent } from './sub-header/sub-header.component';
 import { MenuTabComponent } from './menu-tab/menu-tab.component';
 import { WhsDashboardComponent } from './home/whs-dashboard/whs-dashboard.component';
+import { BarChartGridComponent } from './components/charts/bar-chart-grid/bar-chart-grid.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { WhsDashboardComponent } from './home/whs-dashboard/whs-dashboard.compon
     HeaderComponent,
     SubHeaderComponent,
     MenuTabComponent,
-    WhsDashboardComponent
+    WhsDashboardComponent,
+    BarChartGridComponent
   ],
   imports: [
     BrowserModule
