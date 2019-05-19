@@ -33,6 +33,7 @@ import { VerticalTotalBarChartComponent } from './components/charts/vertical-tot
 import { VerticalBarGridComponent } from './components/charts/vertical-bar-grid/vertical-bar-grid.component';
 import { AcqProcessComponent } from './components/process/acq-process/acq-process.component';
 import { AcqProcessBlockComponent } from './components/process/acq-process-block/acq-process-block.component';
+import { DocumentTableComponent } from './components/document-table/document-table.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { AcqProcessBlockComponent } from './components/process/acq-process-block
     VerticalTotalBarChartComponent,
     VerticalBarGridComponent,
     AcqProcessComponent,
-    AcqProcessBlockComponent
+    AcqProcessBlockComponent,
+    DocumentTableComponent
   ],
   imports: [
     BrowserModule,
