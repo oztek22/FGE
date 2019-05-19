@@ -2,45 +2,15 @@
   <div class="bar-chart-column">
     <div class="bar-chart-inner">
       <div class="bar-chart-thumb-container">
-        <div class="bar-col">
-          <div class="bar-inner-column"> 
-            <div class="line-graph extrasmall">
-              <div class="text-content">
-                <div class="bar-inner-subtext">$11.1B</div>
-                <div class="bar-inner-text">5%</div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        <div class="bar-col">
-          <div class="bar-inner-column"> 
-            <div class="line-graph medium">
-              <div class="text-content">
-                    <div class="bar-inner-subtext">$11.1B</div>
-                    <div class="bar-inner-text">5%</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bar-col">
+        <div class="bar-col" *ngFor="let item of chartData">
           <div class="bar-inner-column">
-            <div class="line-graph high">
-              <div class="text-content">
-                    <div class="bar-inner-subtext">$11.1B</div>
-                    <div class="bar-inner-text">5%</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bar-col">
-          <div class="bar-inner-column">
-            <div class="line-graph small">
-              <div class="text-content">
-                    <div class="bar-inner-subtext">$11.1B</div>
-                    <div class="bar-inner-text">5%</div>
-              </div>
-            </div>
+              <div class="line-graph" [style.width.%]="item.percentage">
+                  <div class="text-content">
+                        <div class="bar-inner-subtext">{{item.label}}</div>
+                        <div class="bar-inner-text">{{item.percentage}}%</div>
+                  </div>
+                </div>
+     
           </div>
         </div>
       </div>
@@ -51,23 +21,13 @@
     <div class="total-text">$61.4 B</div>
   </div>
   <div class="bar-chart-text-column">
-    <div class="bar-chart-text-row">
-      <div class="chart-dot high"></div>
-      <div class="chart-sub-text">Women Owned Small Business</div>
-    </div>
-    <div class="bar-chart-text-row">
-      <div class="chart-dot medium"></div>
-      <div class="chart-sub-text">Small Disadvantaged Business</div>
-    </div>
-    <div class="bar-chart-text-row">
-      <div class="chart-dot small"></div>
-      <div class="chart-sub-text">
-        Service Disabled Veteran Owned Small Business
-      </div>
-    </div>
-    <div class="bar-chart-text-row">
-      <div class="chart-dot extrasmall"></div>
-      <div class="chart-sub-text">HUBZone</div>
+    <div class="bar-chart-text-row" *ngFor="let item of chartData">
+        <div class="chart-dot"></div>
+        <div class="chart-sub-text">
+            {{item.description}}
+        </div>
+      
+     
     </div>
   </div>
 </div>
