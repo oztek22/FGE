@@ -13,18 +13,6 @@
   width: 10px;
   border-radius: 3px;
 }
-.high {
-  background: $cerulean;
-}
-.medium {
-  background: $azure;
-}
-.small {
-  background: $sky-blue;
-}
-.extrasmall {
-  background: $ice-blue-two;
-}
 .chart-sub-text {
   font-size: 14px;
   color: $black-2;
@@ -64,7 +52,28 @@
   justify-content: flex-end;
   flex-direction: column;
 }
-.line-graph{
+.bar-col, .bar-chart-text-row {
+  &:first-child {
+    .line-graph, .chart-dot {
+    background: $ice-blue-two;
+  }}
+  &:nth-child(2) {
+    .line-graph, .chart-dot {
+      background: $azure;
+    }
+  }
+  &:nth-child(3) {
+    .line-graph, .chart-dot {
+      background: $cerulean;
+    }
+  }
+  &:nth-child(4) {
+    .line-graph, .chart-dot {
+      background: $sky-blue;
+    }
+  }
+}
+.line-graph {
   width:23px;
   height: 60%;
 }
