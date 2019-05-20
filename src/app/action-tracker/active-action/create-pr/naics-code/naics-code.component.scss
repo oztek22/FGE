@@ -1,0 +1,123 @@
+@import "../../../../../variables.scss";
+.question-main {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+}
+  .answer-box {
+    padding-bottom: 115px;
+}
+.control-label {
+    font-size: 12px;
+    font-family: "AvenirNextLTPro-Demi";
+    letter-spacing: 1px;
+    line-height: 16px;
+    padding-bottom: 8px;
+    display: block;
+    text-transform: uppercase;
+    color: $black-3;
+}
+  .question-box {
+    padding: 29px 32px 20px 24px;
+    background: $ice-blue-two;
+    width: 100%;
+}
+  .question-box .question-no {
+    font-size: 12px;
+    color: $black-3;
+    letter-spacing: 1px;
+    padding-bottom: 12px;
+    font-family: "AvenirNextLTPro-Demi";
+    line-height: 16px;
+    text-transform: uppercase;
+    display: block;
+}
+  .question-box h2 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 22px;
+    margin: 0px;
+    padding-bottom: 24px;
+    color:$black-1;
+    font-family: "AvenirNextLTPro-Regular";
+}
+  .form-group {
+    padding-bottom: 16px;
+}
+.form-row {
+    margin: 0 -8px;
+    display: flex;
+}
+
+.col-8 {
+    flex-basis: 75%;
+    padding: 0 8px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 0 8px;
+}
+
+.form-control {
+    border-radius: 4px;
+    height: 52px;
+    border: 1px solid transparent;
+    display: block;
+    width: 100%;
+    color: #212126;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 5px 16px;
+    line-height: 1;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    outline: 0px;
+    border: 1px solid $cerulean;
+}
+
+input::placeholder {
+    color: #aaa7b5;
+}
+
+.relevant-link {
+    text-align: right;
+}
+
+.relevant-link a {
+    font-size: 14px;
+    color: $cerulean;
+    font-weight: normal;
+    letter-spacing: 0.3px;
+    transition: all 0.3s;
+}
+.relevant-link a:hover {
+    color: $azure;
+}
+    .NextPrev-Nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.NextPrev-Nav a {
+    color: $cerulean;
+    font-family: "AvenirNextLTPro-Demi";
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    display: flex;
+    align-items: center;
+}
+
+.NextPrev-Nav a span {
+    display: inline-flex;
+}
+
+.prev-arrow span {
+    padding-right: 11px;
+}
+
+.next-arrow span {
+    padding-left: 11px;
+}

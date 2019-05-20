@@ -1,0 +1,149 @@
+@import "../../../../../variables.scss";
+.question-main {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+}
+  .answer-box {
+    padding-bottom: 115px;
+}
+.control-label {
+    font-size: 12px;
+    font-family: "AvenirNextLTPro-Demi";
+    letter-spacing: 1px;
+    line-height: 16px;
+    padding-bottom: 8px;
+    display: block;
+    text-transform: uppercase;
+    color: $black-3;
+}
+  .question-box {
+    padding: 29px 32px 20px 24px;
+    background: $ice-blue-two;
+    width: 100%;
+}
+  .question-box .question-no {
+    font-size: 12px;
+    color: $black-3;
+    letter-spacing: 1px;
+    padding-bottom: 12px;
+    font-family: "AvenirNextLTPro-Demi";
+    line-height: 16px;
+    text-transform: uppercase;
+    display: block;
+}
+  .question-box h2 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 22px;
+    margin: 0px;
+    padding-bottom: 24px;
+    color:$black-1;
+    font-family: "AvenirNextLTPro-Regular";
+}
+  /**** Dropdown css ***/
+label.upload-btn input[type="file"] {
+    position:absolute;
+    opacity: 0;
+}
+/***** Example custom styling *****/
+.upload-btn {
+    border: 2px dashed $cerulean;
+    border-radius: 4px;
+    padding: 2px 5px;
+    background: #fff;
+    width: 100%;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.upload-btn span {
+    display: block;
+    height: 31px;
+     border-radius: 2px;
+    border:  1px solid $cerulean;
+    font-size: 14px;
+  font-weight: 500;
+     letter-spacing: 0.3px;
+    padding: 6px 8px 6px 16px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: $cerulean;
+}
+.upload-btn span img {margin-right: 4px;}
+.upload-btn p {
+    color: #757585;
+     font-size: 14px;
+  font-weight: 300;
+     font-style: oblique;
+    padding-top: 20px;
+}
+
+
+/**** After upload Box  ****/
+.upload-box {
+    border: 2px dashed $cerulean;
+    border-radius: 4px;
+    padding: 28px  24px 26px 20px;
+      width: 100%;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.file-name {
+    display: flex; 
+    align-items: center;
+}
+.file-details {
+    padding-left: 12px;
+}
+.file-icon {height: 33px;}
+.file-details h3 {
+    font-size: 14px;
+  font-weight: normal;
+    color: #212126;
+    margin: 0px;
+}
+.file-details p{
+     font-size: 12px;
+  font-weight: 900;
+    letter-spacing: 1px;
+    color: #aaa7b5;
+}
+.fileEditcontrol button{
+    background-color: transparent;
+    border: none;
+    outline: 0px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.fileEditcontrol button:first-child {margin-left: 0px;}
+.NextPrev-Nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.NextPrev-Nav a {
+    color: $cerulean;
+    font-family: "AvenirNextLTPro-Demi";
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    display: flex;
+    align-items: center;
+}
+
+.NextPrev-Nav a span {
+    display: inline-flex;
+}
+
+.prev-arrow span {
+    padding-right: 11px;
+}
+
+.next-arrow span {
+    padding-left: 11px;
+}
+

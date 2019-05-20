@@ -1,0 +1,49 @@
+@import "../../../../../variables.scss";
+.create-pr-step-first{
+  width:100%;
+  padding:0 0 60px;
+}
+.create-pr-title{
+  h3{
+  font-size:18px;
+  font-family: "AvenirNextLTPro-Demi";
+  color:$black-1;
+  padding:0 0 12px;
+  }
+} 
+.create-pr-box-title{
+  padding:0 0 12px;
+  h4{
+    color:$azure;
+    font-size:12px;
+    font-family: "AvenirNextLTPro-Demi";
+    letter-spacing: 1px;
+  }
+}
+.create-pr-textbox{
+  input{
+    border: none;
+    border-bottom: 1px solid #aaa7b5;
+    padding: 0 0 7px;
+    color: #222f42;
+    font-size: 14px;
+    width:100%;
+    outline: 0;
+  }
+}
+.create-pr-box{
+  max-width:894px;
+  width:100%;
+
+}
+.create-inner-pr-box{
+  width:100%;
+  border:1px solid $very-light-blue;
+  padding:20px 24px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+  .create-pr-item{
+    flex:0 0 40%;
+  }
