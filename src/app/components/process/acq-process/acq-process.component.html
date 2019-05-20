@@ -1,82 +1,12 @@
 <ul class="process-modal-list">
-    <li class="process-modal-step visited">
-      <a href="">
+    <li class="process-modal-step" *ngFor="let data of timelineData; let i=index;" [class.visited]="i < selectedIndex" [class.active]="i == selectedIndex">
+      <a>
         <div class="process-modal-dot">
-          <div class="process-inner-dot"></div>
+          <div class="process-inner-dot" (click)="updateSelection(i)"></div>
         </div>
         <div class="process-text-detail">
-          <div class="process-text-title">Procurement Request</div>
-          <div class="process-text-action">17 Actions</div>
-        </div>
-      </a>
-    </li>
-    <li class="process-modal-step active">
-      <a href="">
-        <div class="process-modal-dot">
-          <div class="triangle-icon">
-            <img src="../../../../assets/images/triangle.svg" alt="triangle" />
-          </div>
-          <div class="process-inner-dot"></div>
-        </div>
-        <div class="process-text-detail">
-          <div class="process-text-title">Market Research</div>
-          <div class="process-text-action">17 Actions</div>
-        </div>
-      </a>
-    </li>
-    <li class="process-modal-step">
-      <a href="">
-        <div class="process-modal-dot">
-          <div class="triangle-icon">
-            <img src="../../../../assets/images/triangle.svg" alt="triangle" />
-          </div>
-          <div class="process-inner-dot"></div>
-        </div>
-        <div class="process-text-detail">
-          <div class="process-text-title">ACQ Strategy Formulation</div>
-          <div class="process-text-action">17 Actions</div>
-        </div>
-      </a>
-    </li>
-    <li class="process-modal-step">
-      <a href="">
-        <div class="process-modal-dot">
-          <div class="triangle-icon">
-            <img src="../../../../assets/images/triangle.svg" alt="triangle" />
-          </div>
-          <div class="process-inner-dot"></div>
-        </div>
-        <div class="process-text-detail">
-          <div class="process-text-title">Request for Proposal</div>
-          <div class="process-text-action">17 Actions</div>
-        </div>
-      </a>
-    </li>
-    <li class="process-modal-step">
-      <a href="">
-        <div class="process-modal-dot">
-          <div class="triangle-icon">
-            <img src="../../../../assets/images/triangle.svg" alt="triangle" />
-          </div>
-          <div class="process-inner-dot"></div>
-        </div>
-        <div class="process-text-detail">
-          <div class="process-text-title">Proposal Evaluation</div>
-          <div class="process-text-action">17 Actions</div>
-        </div>
-      </a>
-    </li>
-    <li class="process-modal-step">
-      <a href="">
-        <div class="process-modal-dot">
-          <div class="triangle-icon">
-            <img src="../../../../assets/images/triangle.svg" alt="triangle" />
-          </div>
-          <div class="process-inner-dot"></div>
-        </div>
-        <div class="process-text-detail">
-          <div class="process-text-title">Awarded</div>
-          <div class="process-text-action">17 Actions</div>
+          <div class="process-text-title">{{data.header}}</div>
+          <div class="process-text-action">{{data.subHeader}}</div>
         </div>
       </a>
     </li>
