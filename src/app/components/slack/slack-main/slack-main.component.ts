@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slack-main.component.scss']
 })
 export class SlackMainComponent implements OnInit {
-
+  taskModal = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  addNewTask(category?) {
+    this.taskModal = true;
+  }
+
+  closeModal() {
+    this.taskModal = false;
   }
 
 }

@@ -1,1 +1,70 @@
-<p>New Task</p>
+<div class="task-modal open">
+  <div class="task-modal-dialog">
+    <div class="task-modal-header">
+      <div class="taskmodal-header-title">
+        <h3>Untitled Task</h3>
+      </div>
+    </div>
+    <div class="task-modal-body">
+      <div class="body-list">
+        <div class="body-list-title">in list</div>
+        <div class="body-list-dropdown">
+          <div class="body-list-status">In Progress</div>
+          <div class="body-down-arrow"><img src="../../../../assets/images/down-arrow.jpeg" /></div>
+          <ul class="body-list-submenu">
+            <li class="body-list-submenu-item">Pending</li>
+            <li class="body-list-submenu-item">Approve</li>
+          </ul>
+        </div>
+      </div>
+      <div class="body-list-content">
+        <div class="body-list-inner-content">
+          <div class="body-list-discription-part">
+            <div class="description-comment">
+              <div class="description-comment-title">Description</div>
+              <div class="description-text-area">
+                <textarea placeholder="Add a more detailed description.."></textarea>
+              </div>
+            </div>
+            <div class="user-activity">
+              <div class="user-activity-title">Activity</div>
+              <div class="user-activity-list">
+                <div class="user-activity-list-item">
+                  <div class="user-activity-img">
+                    <div class="user-activity-img-block">
+                      <img src="../../../../assets/images/user-photo.png" />
+                    </div>
+                  </div>
+                  <div class="user-activity-text-detail">
+                    <div class="user-inner-info">
+                      <div class="user-name-progress"><span class="user-name">Tori Caputo</span> added this task to In
+                        Progress.</div>
+                      <div class="user-date">yesterday at 9:42 AM</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="add-to-task-part">
+            <div class="add-to-tak-title">ADD TO TASK</div>
+            <div class="button-list">
+              <div class="button-items">
+                <div class="button-img">
+                  <img src="../../../../assets/images/user.jpeg" />
+                </div>
+                <div class="button-text">Members</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="task-modal-footer">
+      <div class="footer-buttons">
+        <button class="outline-btn-med" (click)="closeTask()">Cancel</button>
+        <button class="secondary_blue_btn" (click)="saveTask()">Create</button>
+      </div>
+    </div>
+  </div>
+</div>

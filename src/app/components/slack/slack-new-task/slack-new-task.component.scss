@@ -1,0 +1,225 @@
+@import "../../../../variables.scss";
+// modal css start
+.task-modal {
+  display: none;
+  &::before {
+    content: "";
+    display: none;
+    background: rgba(33, 33, 37, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+  }
+  &.open {
+    display: block;
+    &::before {
+      display: block;
+    }
+  }
+}
+.task-modal-dialog {
+  background: #ffffff;
+  border-radius: 4px;
+  max-width: 800px;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 102;
+}
+.task-modal-header {
+  padding: 16px 24px;
+  width: 100%;
+  max-width: 542px;
+}
+.taskmodal-header-title {
+  border-radius: 2px;
+  border: 1px solid $azure;
+  padding: 5px 12px;
+  h3 {
+    color: $dark-grey-two;
+    font-size: 20px;
+    font-family: "AvenirNextLTPro-Demi";
+  }
+}
+.task-modal-body {
+  padding: 0 24px 0 36px;
+  width: 100%;
+}
+.body-list {
+  display: flex;
+  align-items: center;
+}
+.body-list-title {
+  color: $black-2;
+  font-size: 14px;
+  font-family: "AvenirNextLTPro-Demi";
+  padding-right: 16px;
+}
+.body-list-dropdown {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d8d8d8;
+  cursor: pointer;
+  position: relative;
+}
+.body-list-status {
+  color: $dark-grey-two;
+  font-size: 14px;
+  font-family: "AvenirNextLTPro-Demi";
+  padding: 0 24px 0 0;
+}
+.body-list-submenu {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 3px 12px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  &.open {
+    display: block;
+  }
+  .body-list-submenu-item {
+    list-style: none;
+    padding: 10px;
+    font-size: 14px;
+    font-family: "AvenirNextLTPro-Regular";
+    border-bottom: 1px solid #d8d8d8;
+  }
+}
+.body-list-content {
+  padding: 20px 0 40px;
+  width: 100%;
+}
+.body-list-inner-content {
+  width: 100%;
+  display: flex;
+}
+.body-list-discription-part {
+  flex: 1 1 auto;
+  padding-right: 30px;
+}
+.description-comment {
+  width: 100%;
+}
+.description-comment-title {
+  font-size: 16px;
+  font-family: "AvenirNextLTPro-Demi";
+  color: $dark-grey-two;
+  padding: 0 0 10px;
+}
+.description-text-area {
+  textarea {
+    font-family: "Avenir-Roman";
+    color: #494950;
+    font-weight: normal;
+    width: 100%;
+    font-size: 14px;
+    height: 87px;
+    padding: 11px 17px;
+    border: 1px solid #d8d8d8;
+    resize: none;
+    border-radius: 4px;
+  }
+}
+.user-activity-title {
+  font-size: 16px;
+  font-family: "AvenirNextLTPro-Demi";
+  color: $dark-grey-two;
+  padding: 0 0 10px;
+}
+.user-activity {
+  padding: 40px 0 0;
+}
+.user-activity-list {
+  width: 100%;
+  .user-activity-list-item {
+    display: flex;
+  }
+  .user-activity-img {
+    flex: 0 0 28px;
+    .user-activity-img-block {
+      height: 28px;
+      width: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .user-activity-text-detail {
+    flex: 1 1 auto;
+    padding-left: 8px;
+  }
+  .user-inner-info {
+    width: 100%;
+    .user-name-progress {
+      color: $black-2;
+      font-size: 14px;
+      font-family: "Avenir-Roman";
+      padding-bottom: 2px;
+    }
+    .user-name {
+      font-size: 14px;
+      font-family: "AvenirNextLTPro-Demi";
+      color: $dark-grey-two;
+    }
+    .user-date {
+      color: $black-3;
+      font-size: 14px;
+      font-family: "Avenir-Roman";
+    }
+  }
+}
+.add-to-task-part {
+  flex: 0 0 180px;
+}
+.add-to-tak-title {
+  font-size: 12px;
+  font-family: "AvenirNextLTPro-Demi";
+  color: $black-2;
+  padding: 0 0 17px;
+}
+.button-list {
+  width: 100%;
+}
+.button-items {
+  background: $black-5;
+  padding: 9px 12px 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.button-img {
+  flex: 0 0 14px;
+  display: flex;
+  align-items: center;
+}
+.button-text {
+  font-size: 14px;
+  font-family: "AvenirNextLTPro-Demi";
+  color: $black-2;
+  padding: 0 0 0 8px;
+}
+.task-modal-footer {
+  border-top: 1px solid #d8d8d8;
+  padding: 11px 24px;
+}
+.footer-buttons {
+  display: flex;
+  justify-content: flex-end;
+  .outline-btn-med {
+    margin-right: 16px;
+  }
+}
+// modal css end

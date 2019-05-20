@@ -3,7 +3,7 @@
   <div class="main_tasks_section_title">
     <h3>Tasks</h3>
     <div class="main_tasks_section_button">
-    <button class="blue_btn_icon">New Task</button>
+    <button class="blue_btn_icon" (click)="addNewTask()">New Task</button>
   </div>
   </div>
     <div class="main_tasks_section_inner">
@@ -21,4 +21,8 @@
       </div>
     </div>
   </div>
+</div>
+
+<div *ngIf="taskModal">
+    <app-slack-new-task (closeModal)="closeModal()"></app-slack-new-task>
 </div>
