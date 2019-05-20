@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-status-tracker',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./status-tracker.component.scss']
 })
 export class StatusTrackerComponent implements OnInit {
+  @Input()
+  selectedIndex = 0;
+  @Input()
+  isChangable = true;
 
   constructor() { }
 

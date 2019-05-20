@@ -1,10 +1,3 @@
-<app-step1></app-step1>
-<app-step2></app-step2>
-<app-datamanagement>
-</app-datamanagement>
-<app-status-tracker></app-status-tracker>
-<app-acquisitionstrategy></app-acquisitionstrategy>
-<app-slack-main></app-slack-main>
-<app-document-table></app-document-table>
-<app-conversation></app-conversation>
+<app-acq-process-block [title]="title"></app-acq-process-block>
 
+<app-table [headerData]="table.headerData" [tableData]="table.tableData" [total]="null" [isClickable]="true" (dataClicked)="openIndividual($event)"></app-table>

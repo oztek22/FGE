@@ -17,6 +17,7 @@
   float: none;
   position: relative;
   flex: 0 0 16.6666%;
+  padding: 0 5px;
 }
 .process-modal-step:after {
   background: #087ed1;
@@ -27,14 +28,15 @@
   margin: 0 auto;
   position: absolute;
   right: -65px;
-  top: 16px;
+  top: 15.99px;
   width: 100%;
   z-index: -1;
 }
 .triangle-icon {
   position: absolute;
-  top: 9px;
+  top: 50%;
   left: -8px;
+  transform: translateY(-50%);
 }
 .process-modal-step:last-child:after {
   width: 0;
@@ -51,6 +53,9 @@
   background: #ededf0;
   border-radius: 50%;
   position: relative;
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 .process-inner-dot {
   display: block;
@@ -69,12 +74,18 @@
 .active .process-modal-dot {
   border: 1px solid #087ed1;
   background: $ice-blue-two;
+  &.white-bg {
+    background: #ffffff;
+  }
 }
 .active .process-inner-dot {
   background: #087ed1;
 }
 .visited .process-modal-dot {
   background: $ice-blue-two;
+  &.white-bg {
+    background: #ffffff;
+  }
 }
 .visited .process-inner-dot {
   background: #087ed1;

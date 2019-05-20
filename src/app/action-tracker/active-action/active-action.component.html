@@ -1,3 +1,11 @@
-<p>
-  active-action works!
-</p>
+<div class="fixed-width">
+    <div class="back_to_page" (click)="backToTracker()">
+        Back to Action Tracker
+    </div>
+    <app-datamanagement [id]="id"></app-datamanagement>
+    <app-status-tracker [isChangable]="false" [selectedIndex]="2"></app-status-tracker>
+    <app-acquisitionstrategy></app-acquisitionstrategy>
+    <app-slack-main></app-slack-main>
+    <app-document-table></app-document-table>
+    <app-conversation></app-conversation>
+</div>
