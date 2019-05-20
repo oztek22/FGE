@@ -29,7 +29,7 @@
   width: 20%;
 }
 .table td {
-  padding: 18px 16px;
+  padding: 18px 5px;
   text-align: center;
   font-size: 14px;
 }
@@ -52,4 +52,7 @@
 }
 .green {
   color: #39b54a;
+}
+.cursor-pointer {
+  cursor: pointer;
 }

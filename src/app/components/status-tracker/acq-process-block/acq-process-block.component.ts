@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-acq-process-block',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./acq-process-block.component.scss']
 })
 export class AcqProcessBlockComponent implements OnInit {
+
+  @Input()
+  title = 'Aquisition Planning';
 
   constructor() { }
 

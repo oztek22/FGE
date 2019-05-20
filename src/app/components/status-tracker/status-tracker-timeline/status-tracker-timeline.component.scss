@@ -72,12 +72,18 @@
 .active .process-modal-dot {
   border: 1px solid #087ed1;
   background: $ice-blue-two;
+  &.white-bg {
+    background: #ffffff;
+  }
 }
 .active .process-inner-dot {
   background: #087ed1;
 }
 .visited .process-modal-dot {
   background: $ice-blue-two;
+  &.white-bg {
+    background: #ffffff;
+  }
 }
 .visited .process-inner-dot {
   background: #087ed1;

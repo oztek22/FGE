@@ -9,6 +9,9 @@ export class StatusTrackerTimelineComponent implements OnInit {
 
   @Input()
   isDetailed = true;
+  
+  @Input()
+  isWhiteBG = false;
 
   @Input()
   timelineData = [

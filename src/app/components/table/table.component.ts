@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-table',
@@ -6,6 +6,11 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit {
+  
+  @Output()
+  dataClicked = new EventEmitter<any>();
+  @Input()
+  isClickable = false;
   @Input()
   headerData = [
     {slug: 'toa', label: 'TYPE OF ACTION'},
@@ -32,6 +37,12 @@ export class TableComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  tableDataClicked(item) {
+    if (this.isClickable) {
+      this.dataClicked.emit(item);
+    }
   }
 
 }

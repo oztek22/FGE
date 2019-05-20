@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-datamanagement',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./datamanagement.component.scss']
 })
 export class DatamanagementComponent implements OnInit {
+  @Input()
+  id;
 
   constructor() { }
 
