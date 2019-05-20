@@ -7,17 +7,9 @@
       <div class="bar-chart-inner">
         <div class="bar-chart-thumb-container">
           
-          <div class="bar-col">
+          <div class="bar-col" *ngFor="let data of chartData">
             <div class="bar-inner-column"> 
-              <div class="line-graph medium">
-              
-              </div>
-            </div>
-          </div>
-          <div class="bar-col">
-            <div class="bar-inner-column">
-              <div class="line-graph high">
-                
+              <div class="line-graph" [style.width.%]="data.percentage">
               </div>
             </div>
           </div>
@@ -25,20 +17,13 @@
         </div>
       </div>
       <div class="bar-chart-bottom-text">
-        <div class="total-bar-width">
+        <div class="total-bar-width" *ngFor="let data of chartData">
           <div class="total-bar-chart-text-detail">
-            <div class="total-bar-chart-dot high"></div>
-            <div class="total-bar-dot-status">Available</div>
+            <div class="total-bar-chart-dot"></div>
+            <div class="total-bar-dot-status">{{data.description}}</div>
           </div>
-          <div class="year-percentage">47.6%</div>
+          <div class="year-percentage">{{data.percentage}}%</div>
         </div>
-        <div class="total-bar-width">
-            <div class="total-bar-chart-text-detail">
-              <div class="total-bar-chart-dot high"></div>
-              <div class="total-bar-dot-status">Available</div>
-            </div>
-            <div class="year-percentage">47.6%</div>
-          </div>
       </div>
      
     </div>

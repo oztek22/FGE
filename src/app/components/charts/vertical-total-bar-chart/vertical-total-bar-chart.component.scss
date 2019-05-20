@@ -27,17 +27,26 @@
   
 }
 
-.high {
-  background: $cerulean;
-}
-.medium {
-  background: $azure;
-}
-.small {
-  background: $sky-blue;
-}
-.extrasmall {
-  background: $ice-blue-two;
+.bar-col, .total-bar-width {
+  &:first-child {
+    .line-graph, .total-bar-chart-dot {
+    background: $ice-blue-two;
+  }}
+  &:nth-child(2) {
+    .line-graph, .total-bar-chart-dot {
+      background: $azure;
+    }
+  }
+  &:nth-child(3) {
+    .line-graph, .total-bar-chart-dot {
+      background: $cerulean;
+    }
+  }
+  &:nth-child(4) {
+    .line-graph, .total-bar-chart-dot {
+      background: $sky-blue;
+    }
+  }
 }
 
 
