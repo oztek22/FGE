@@ -32,6 +32,9 @@ export class StatusTrackerTimelineComponent implements OnInit {
   @Input()
   selectedIndex = 0;
 
+  @Input()
+  isChangable;
+
   constructor() { }
 
   ngOnInit() {
@@ -39,7 +42,9 @@ export class StatusTrackerTimelineComponent implements OnInit {
 
 
   updateSelection(index) {
-    this.selectedIndex = index;
+    if (this.isChangable) {
+      this.selectedIndex = index;
+    }
   }
 
 }

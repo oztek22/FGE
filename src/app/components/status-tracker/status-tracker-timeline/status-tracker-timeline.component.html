@@ -2,7 +2,7 @@
   <ul class="process-modal-list">
       <li class="process-modal-step" *ngFor="let data of timelineData; let i=index;" [class.visited]="i < selectedIndex" [class.active]="i == selectedIndex">
           <a>
-              <div class="process-modal-dot" [class.white-bg]="isWhiteBG">
+              <div class="process-modal-dot" [class.white-bg]="isWhiteBG" [class.cursor-pointer]="isChangable">
                   <div class="triangle-icon" *ngIf="i>0">
                         <img src="../../../../assets/images/triangle.svg" alt="triangle" />
                     </div>

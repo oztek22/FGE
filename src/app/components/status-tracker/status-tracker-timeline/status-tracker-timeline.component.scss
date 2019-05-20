@@ -28,7 +28,7 @@
   margin: 0 auto;
   position: absolute;
   right: -65px;
-  top: 16px;
+  top: 15.99px;
   width: 100%;
   z-index: -1;
 }
@@ -54,8 +54,10 @@
   border-radius: 50%;
   position: relative;
 }
-.process-inner-dot {
+.cursor-pointer {
   cursor: pointer;
+}
+.process-inner-dot {
   display: block;
   height: 16px;
   width: 16px;
