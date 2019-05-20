@@ -17,6 +17,7 @@
   float: none;
   position: relative;
   flex: 0 0 16.6666%;
+  padding: 0 5px;
 }
 .process-modal-step:after {
   background: #087ed1;
@@ -33,8 +34,9 @@
 }
 .triangle-icon {
   position: absolute;
-  top: 9px;
+  top: 50%;
   left: -8px;
+  transform: translateY(-50%);
 }
 .process-modal-step:last-child:after {
   width: 0;
@@ -53,6 +55,7 @@
   position: relative;
 }
 .process-inner-dot {
+  cursor: pointer;
   display: block;
   height: 16px;
   width: 16px;

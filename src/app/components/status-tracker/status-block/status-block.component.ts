@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-status-block',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./status-block.component.scss']
 })
 export class StatusBlockComponent implements OnInit {
+
+  @Input()
+  data;
 
   constructor() { }
 

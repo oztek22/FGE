@@ -30,7 +30,6 @@ import { AcquisitionstrategyComponent } from './components/acquisitionstrategy/a
 import { VerticalBarComponent } from './components/charts/vertical-bar/vertical-bar.component';
 import { VerticalTotalBarChartComponent } from './components/charts/vertical-total-bar-chart/vertical-total-bar-chart.component';
 import { VerticalBarGridComponent } from './components/charts/vertical-bar-grid/vertical-bar-grid.component';
-import { AcqProcessComponent } from './components/process/acq-process/acq-process.component';
 import { AcqProcessBlockComponent } from './components/process/acq-process-block/acq-process-block.component';
 import { DocumentTableComponent } from './components/document-table/document-table.component';
 import { StatusTrackerComponent } from './components/status-tracker/status-tracker/status-tracker.component';
@@ -68,7 +67,6 @@ import { StatusTrackerTimelineComponent } from './components/status-tracker/stat
     VerticalBarComponent,
     VerticalTotalBarChartComponent,
     VerticalBarGridComponent,
-    AcqProcessComponent,
     AcqProcessBlockComponent,
     DocumentTableComponent,
     StatusBlockComponent,
