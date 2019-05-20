@@ -6,17 +6,11 @@
         <div class="whs-ad-perfomance-block">
           <h3>WHS AD Performance</h3>
           <div class="two-col-table">
-            <div class="two-col-table-row">
+            <div class="two-col-table-row" *ngFor="let item of table1">
               <div class="two-col-table-label">
-                Agency Target ECLT(Days) (per contract action):
+                {{item.label}}
               </div>
-              <div class="two-col-table-value">120</div>
-            </div>
-            <div class="two-col-table-row">
-              <div class="two-col-table-label">
-                Average ECLT (per contract action):
-              </div>
-              <div class="two-col-table-value">146</div>
+              <div class="two-col-table-value">{{item.value}}</div>
             </div>
           </div>
 
@@ -37,62 +31,18 @@
               </div>
             </div>
 
-            <div class="four-col-table-row">
+            <div class="four-col-table-row" *ngFor="let item of table2">
               <div class="four-col-table-col-one">
-                PDW
+                {{item.label}}
               </div>
               <div class="four-col-table-col-two">
-                32%
+                {{item.val1}}
               </div>
               <div class="four-col-table-col-three">
-                99%
+                {{item.val2}}
               </div>
               <div class="four-col-table-col-four">
-                34%
-              </div>
-            </div>
-
-            <div class="four-col-table-row">
-              <div class="four-col-table-col-one">
-                PDW
-              </div>
-              <div class="four-col-table-col-two">
-                32%
-              </div>
-              <div class="four-col-table-col-three">
-                99%
-              </div>
-              <div class="four-col-table-col-four">
-                34%
-              </div>
-            </div>
-
-            <div class="four-col-table-row">
-              <div class="four-col-table-col-one">
-                PDW
-              </div>
-              <div class="four-col-table-col-two">
-                32%
-              </div>
-              <div class="four-col-table-col-three">
-                99%
-              </div>
-              <div class="four-col-table-col-four">
-                34%
-              </div>
-            </div>
-            <div class="four-col-table-row">
-              <div class="four-col-table-col-one">
-                PDW
-              </div>
-              <div class="four-col-table-col-two">
-                32%
-              </div>
-              <div class="four-col-table-col-three">
-                99%
-              </div>
-              <div class="four-col-table-col-four">
-                34%
+                {{item.val3}}
               </div>
             </div>
           </div>
@@ -110,81 +60,26 @@
               </div>
               <div class="three-col-table-col-three align-right">2018</div>
             </div>
-            <div class="three-col-table-row">
+            <div class="three-col-table-row" *ngFor="let item of table3">
               <div class="three-col-table-col-one">
-                Total Budget Available:
+                {{item.label}}
               </div>
               <div class="three-col-table-col-two align-right">
-                US$ 10,445,000,000
+                {{item.val1}}
               </div>
               <div class="three-col-table-col-three align-right">
-                US$ 6,129,472,947
-              </div>
-            </div>
-            <div class="three-col-table-row">
-              <div class="three-col-table-col-one">
-                Total Obligated Funds:
-              </div>
-              <div class="three-col-table-col-two align-right">
-                US$ 10,445,000,000
-              </div>
-              <div class="three-col-table-col-three align-right">
-                US$ 6,129,472,947
-              </div>
-            </div>
-            <div class="three-col-table-row">
-              <div class="three-col-table-col-one">
-                Total Funds Obligated:
-              </div>
-              <div class="three-col-table-col-two align-right">
-                US$ 10,445,000,000
-              </div>
-              <div class="three-col-table-col-three align-right">
-                US$ 6,129,472,947
-              </div>
-            </div>
-            <div class="three-col-table-row">
-              <div class="three-col-table-col-one">
-                Total Contract Value (Anticipated Awards)
-              </div>
-              <div class="three-col-table-col-two align-right">
-                US$ 10,445,000,000
-              </div>
-              <div class="three-col-table-col-three align-right">
-                US$ 6,129,472,947
-              </div>
-            </div>
-            <div class="three-col-table-row">
-              <div class="three-col-table-col-one">
-                Total Completed Contract Actions:
-              </div>
-              <div class="three-col-table-col-two align-right">
-                US$ 10,445,000,000
-              </div>
-              <div class="three-col-table-col-three align-right">
-                US$ 6,129,472,947
-              </div>
-            </div>
-            <div class="three-col-table-row">
-              <div class="three-col-table-col-one">
-                Total Actions Outstanding:
-              </div>
-              <div class="three-col-table-col-two align-right">
-                US$ 10,445,000,000
-              </div>
-              <div class="three-col-table-col-three align-right">
-                US$ 6,129,472,947
+                {{item.val2}}
               </div>
             </div>
             <div class="three-col-table-row large_table_content">
               <div class="three-col-table-col-one">
-                WHS AD Total Anticipated Actions FY19
+                {{table3Footer.label}}
               </div>
               <div class="three-col-table-col-two align-right">
-                2,729
+                {{table3Footer.val1}}
               </div>
               <div class="three-col-table-col-three align-right">
-                2,144
+                {{table3Footer.val2}}
               </div>
             </div>
           </div>
