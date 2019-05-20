@@ -1,0 +1,92 @@
+@import "../../../../variables.scss";
+
+// status-block css start
+.status-block {
+  width: 100%;
+  border: 1px solid $black-5;
+  border-radius: 4px;
+  margin: 20px 0 0;
+}
+.status-inner-block {
+  padding: 12px;
+}
+.status-header {
+  .status-title {
+    font-size: 14px;
+    font-family: "AvenirNextLTPro-Demi";
+    color: $black-1;
+    padding-bottom: 6px;
+    text-align: left;
+  }
+  .status-time-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .status-count,
+  .status-days {
+    font-size: 12px;
+    font-family: "AvenirNextLTPro-Demi";
+    color: $metal-gray;
+  }
+}
+.status-pending-approve-block {
+  text-align: left;
+  .status-pending-block {
+    width: 100%;
+    padding: 20px 0 0;
+  }
+  .status-pending-title {
+    font-size: 12px;
+    font-family: "AvenirNextLTPro-Demi";
+    color: $black-4;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .status-user-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+  .status-user-name {
+    display: flex;
+    align-items: center;
+  }
+  .status-user {
+    flex: 0 0 24px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .status-name-text {
+    font-size: 14px;
+    font-family: "Avenir-Roman";
+    color: $black-2;
+    padding-left: 8px;
+  }
+  .status-pending-dot {
+    height: 8px;
+    width: 8px;
+    flex: 0 0 8px;
+    border-radius: 50%;
+    background: $black-4;
+    &.pending {
+      background: $grapefruit;
+    }
+    &.approve {
+      background: $medium-green;
+    }
+  }
+}
+// status-block css end

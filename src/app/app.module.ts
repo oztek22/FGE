@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TableComponent } from './components/table/table.component';
 import { BarChartComponent } from './components/charts/bar-chart/bar-chart.component';
-import { StatusTrackerComponent } from './components/charts/status-tracker/status-tracker.component';
 import { ActionTrackerComponent } from './action-tracker/action-tracker.component';
 import { SlackMainComponent } from './components/slack/slack-main/slack-main.component';
 import { SlackNewTaskComponent } from './components/slack/slack-new-task/slack-new-task.component';
@@ -34,6 +33,9 @@ import { VerticalBarGridComponent } from './components/charts/vertical-bar-grid/
 import { AcqProcessComponent } from './components/process/acq-process/acq-process.component';
 import { AcqProcessBlockComponent } from './components/process/acq-process-block/acq-process-block.component';
 import { DocumentTableComponent } from './components/document-table/document-table.component';
+import { StatusTrackerComponent } from './components/status-tracker/status-tracker/status-tracker.component';
+import { StatusBlockComponent } from './components/status-tracker/status-block/status-block.component';
+import { StatusTrackerTimelineComponent } from './components/status-tracker/status-tracker-timeline/status-tracker-timeline.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +70,9 @@ import { DocumentTableComponent } from './components/document-table/document-tab
     VerticalBarGridComponent,
     AcqProcessComponent,
     AcqProcessBlockComponent,
-    DocumentTableComponent
+    DocumentTableComponent,
+    StatusBlockComponent,
+    StatusTrackerTimelineComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,95 @@
+@import "../../../../variables.scss";
+// status-tracker css start
+.process-modal-list {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  border: none;
+  z-index: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-family: "AvenirNextLTPro-Regular";
+}
+.process-modal-step {
+  display: inline-block;
+  text-align: center;
+  float: none;
+  position: relative;
+  flex: 0 0 16.6666%;
+}
+.process-modal-step:after {
+  background: #087ed1;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 0 auto;
+  position: absolute;
+  right: -65px;
+  top: 16px;
+  width: 100%;
+  z-index: -1;
+}
+.triangle-icon {
+  position: absolute;
+  top: 9px;
+  left: -8px;
+}
+.process-modal-step:last-child:after {
+  width: 0;
+}
+.process-modal-step:first-child:after {
+  width: 90%;
+}
+.process-modal-dot {
+  display: block;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  margin: 0 auto;
+  background: #ededf0;
+  border-radius: 50%;
+  position: relative;
+}
+.process-inner-dot {
+  display: block;
+  height: 16px;
+  width: 16px;
+  text-align: center;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.active .process-modal-dot {
+  border: 1px solid #087ed1;
+  background: $ice-blue-two;
+}
+.active .process-inner-dot {
+  background: #087ed1;
+}
+.visited .process-modal-dot {
+  background: $ice-blue-two;
+}
+.visited .process-inner-dot {
+  background: #087ed1;
+}
+.process-text-title {
+  margin: 0;
+  font-size: 16px;
+  color: #212126;
+  padding: 17px 0 7px;
+}
+.process-text-action {
+  margin: 0;
+  font-size: 14px;
+  font-family: "AvenirNextLTPro-Demi";
+  color: #0096ff;
+}
+
+// status tracker css end

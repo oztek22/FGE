@@ -1,0 +1,12 @@
+@import "../../../../variables.scss";
+.p-b-60 {
+  padding-bottom: 60px;
+}
+.status-tracker-title {
+  padding-bottom: 38px;
+  h3 {
+    font-size: 24px;
+    color: $black-1;
+    font-family: "AvenirNextLTPro-Demi";
+  }
+}
