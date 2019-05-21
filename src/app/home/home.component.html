@@ -7,8 +7,10 @@
   </div>
   <div class="chart-bottom-padding">
     <div *ngFor="let chartGrid of chartsData">
+      <div class="inner-padding">
         <app-bar-chart-grid [title]="chartGrid.title" [chart1]="chartGrid.chart1" [chart2]="chartGrid.chart2"></app-bar-chart-grid>
-    </div>
+        </div>
+      </div>
   </div>
 </div>
 </div>
