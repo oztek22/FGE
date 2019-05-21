@@ -1,4 +1,4 @@
 <div class="acq-planing-page">
-  <app-acq-process-block></app-acq-process-block>
-  <app-vertical-bar-grid></app-vertical-bar-grid>
+  <app-acq-process-block [timelineData]="timelineData" [activeFields]="activeFields" (updateActiveFields)="updateActiveFields($event)"></app-acq-process-block>
+  <app-vertical-bar-grid [chartOverView]="chartOverView" [chartData]="chartData"></app-vertical-bar-grid>
 </div>

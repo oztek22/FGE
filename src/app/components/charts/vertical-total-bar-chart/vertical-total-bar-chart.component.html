@@ -1,13 +1,13 @@
 <div class="total-container">
   <div class="total-chart-title">
-        <h4>Total Budget: $500,000,000</h4>
+        <h4>{{chartData.title}}</h4>
   </div>
 <div class="bar-chart-container">
     <div class="bar-chart-column">
       <div class="bar-chart-inner">
         <div class="bar-chart-thumb-container">
           
-          <div class="bar-col" *ngFor="let data of chartData">
+          <div class="bar-col" *ngFor="let data of chartData.graphData">
             <div class="bar-inner-column"> 
               <div class="line-graph" [style.width.%]="data.percentage">
               </div>
@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="bar-chart-bottom-text">
-        <div class="total-bar-width" *ngFor="let data of chartData">
+        <div class="total-bar-width" *ngFor="let data of chartData.graphData">
           <div class="total-bar-chart-text-detail">
             <div class="total-bar-chart-dot"></div>
             <div class="total-bar-dot-status">{{data.description}}</div>

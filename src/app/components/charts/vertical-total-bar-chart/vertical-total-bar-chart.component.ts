@@ -7,20 +7,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class VerticalTotalBarChartComponent implements OnInit {
   @Input()
-  chartData = [
-    {
-      'percentage': 47.6,
-      'description': 'available'
-    },
-    {
-      'percentage': 52.4,
-      'description': 'obligated'
-    }
-  ]
+  chartData;
 
   constructor() { }
 
   ngOnInit() {
+    if (this.chartData) {
+      this.chartData.graphData.sort((a, b) => {
+        return b.percentage - a.percentage;
+      });
+    }
   }
 
 }
