@@ -1,3 +1,3 @@
-<app-acq-process-block [title]="title"></app-acq-process-block>
+<app-acq-process-block [title]="title" [timelineData]="timelineData" [activeFields]="activeFields" (updateActiveFields)="updateActiveFields($event)"></app-acq-process-block>
 
 <app-table [headerData]="table.headerData" [tableData]="table.tableData" [tableFooter]="null" [isClickable]="true" (dataClicked)="openIndividual($event)"></app-table>
