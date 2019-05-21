@@ -10,6 +10,8 @@ export class StatusTrackerComponent implements OnInit {
   selectedIndex = 0;
   @Input()
   isChangable = true;
+  @Input()
+  timelineData;
 
   constructor() { }
 

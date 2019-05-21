@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, Params } from '@angular/router';
 
 @Component({
   selector: 'app-create-pr',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-pr.component.scss']
 })
 export class CreatePrComponent implements OnInit {
+  id;
 
-  constructor() { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.route.params.subscribe((params: Params) => {
+      this.id = params['id'];
+    });
+  }
+
+  backToTracker() {
+    this.router.navigate(['action-tracker']);
   }
 
 }

@@ -8,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class DatamanagementComponent implements OnInit {
   @Input()
   id;
+  @Input()
+  funds;
 
   constructor() { }
 
