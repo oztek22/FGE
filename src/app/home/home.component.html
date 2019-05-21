@@ -1,5 +1,5 @@
-<app-whs-dashboard></app-whs-dashboard>
-<app-table></app-table>
+<app-whs-dashboard [table1]="adPerformance" [table2]="adObligationPerformance" [table3]="budgetAlocation" [table3Footer]="budgetAlocationFooter"></app-whs-dashboard>
+<app-table [headerData]="tableHeaderData" [tableData]="tableData" [tableFooter]="tableFooter"></app-table>
 <div class="chart-section">
 <div class="fixed-width">
   <div class="section-title">
