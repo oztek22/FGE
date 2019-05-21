@@ -3,6 +3,7 @@
   display: flex;
   padding: 0 0 15px;
   align-items: flex-start;
+  flex:1 1 auto;
 }
 .bar-chart-container{
   display: flex;
@@ -125,7 +126,15 @@
 }
 .text-content{
   position: absolute;
-  top: 0;
-  right: -25px;
-  transform: rotate(90deg);
+  top: 8px;
+  right: -28px;
+}
+.bar-chart-inner-percentage{
+  color:$black-2;
+  font-size: 16px;
+  font-family: "AvenirNextLTPro-Demi";
+}
+.bar-chart-botton-info{
+  display: flex;
+  align-items: flex-start;
 }

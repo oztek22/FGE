@@ -7,7 +7,7 @@
               <div class="line-graph" [style.width.%]="item.percentage">
                 <div class="text-content">
                   <div class="bar-inner-subtext">{{item.label}}</div>
-                  <div class="bar-inner-text">{{item.percentage}}%</div>
+                  <!-- <div class="bar-inner-text">{{item.percentage}}%</div> -->
                 </div>
               </div>
               
@@ -23,9 +23,12 @@
       </div>
     </div>
     <div class="vertical-bar-chart-text-column">
-      <div class="bar-chart-text-row" *ngFor="let item of chartData">
-        <div class="chart-dot"></div>
-        <div class="chart-sub-text">{{item.description}}</div>
+       <div class="bar-chart-botton-info" *ngFor="let item of chartData">
+        <div class="bar-chart-text-row">
+          <div class="chart-dot"></div>
+          <div class="chart-sub-text">{{item.description}}</div>
+        </div>
+        <div class="bar-chart-inner-percentage" >{{item.percentage}}%</div>
       </div>
     </div>
   </div>
