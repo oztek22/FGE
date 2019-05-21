@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-status-tracker-timeline',
@@ -12,6 +12,12 @@ export class StatusTrackerTimelineComponent implements OnInit {
   
   @Input()
   isWhiteBG = false;
+
+  @Input()
+  activeFields = [];
+
+  @Output()
+  updateActiveFields = new EventEmitter<any>();
 
   @Input()
   timelineData = [
@@ -43,8 +49,18 @@ export class StatusTrackerTimelineComponent implements OnInit {
 
   updateSelection(index) {
     if (this.isChangable) {
-      this.selectedIndex = index;
+      const activeFieldIndex = this.activeFields.indexOf(index);
+      if (activeFieldIndex > -1) {
+        this.activeFields.splice(activeFieldIndex, 1);
+      } else {
+        this.activeFields.push(index);
+      }
+      this.updateActiveFields.emit(this.activeFields);
     }
+  }
+
+  isActive(index) {
+    return !this.isChangable && index === this.selectedIndex || this.activeFields.indexOf(index) > -1;
   }
 
 }
