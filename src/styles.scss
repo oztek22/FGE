@@ -190,6 +190,10 @@ button.outline-btn-med:hover {
 @media (max-width: 1120px) {
   .fixed-width {
     width: 1120px;
+    overflow: hidden;
+  }
+  header {
+    width:1120px;
   }
 }
 /*-----------------------------Page title with button End--------------------------------------*/
