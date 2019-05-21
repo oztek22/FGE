@@ -78,7 +78,7 @@
   padding-bottom:2px;
   text-align: center;
 }
-.bar-col, .bar-chart-text-row {
+.bar-col, .bar-chart-botton-info {
   &:first-child {
     .line-graph, .chart-dot {
     background: $ice-blue-two;
@@ -102,7 +102,6 @@
 .bar-col {
   display: flex;
   justify-content: flex-end;
-  margin: 0 0 8px;
   &:last-child{
     margin:0;
   }

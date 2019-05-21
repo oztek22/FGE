@@ -2,7 +2,7 @@
     <div class="bar-chart-column">
       <div class="bar-chart-inner">
         <div class="bar-chart-thumb-container">
-          <div class="bar-col" *ngFor="let item of chartData">
+          <div class="bar-col" *ngFor="let item of chartData.graphData">
             <div class="bar-inner-column"> 
               <div class="line-graph" [style.width.%]="item.percentage">
                 <div class="text-content">
@@ -17,13 +17,13 @@
       </div>
       <div class="vertical-right-text">
         <div class="bar-chart-bottom-text">
-          <span class="year-text">Goal:</span><span class="year-percentage"> 22%</span>
+          <span class="year-text">{{chartData.name}}:</span><span class="year-percentage"> {{chartData.value}}</span>
         </div>
-        <div class="vertical-total-text">$61.4 B</div>
+        <div class="vertical-total-text">{{chartData.label}}</div>
       </div>
     </div>
     <div class="vertical-bar-chart-text-column">
-       <div class="bar-chart-botton-info" *ngFor="let item of chartData">
+       <div class="bar-chart-botton-info" *ngFor="let item of chartData.graphData">
         <div class="bar-chart-text-row">
           <div class="chart-dot"></div>
           <div class="chart-sub-text">{{item.description}}</div>
