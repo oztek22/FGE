@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -39,6 +40,7 @@ import { NaicsCodeComponent } from './action-tracker/active-action/create-pr/nai
 import { CalendarTypeComponent } from './action-tracker/active-action/create-pr/calendar-type/calendar-type.component';
 import { UploadFileComponent } from './action-tracker/active-action/create-pr/upload-file/upload-file.component';
 import { FarReferencesComponent } from './action-tracker/active-action/create-pr/far-references/far-references.component';
+import { FetchDataService } from './services/fetch-data.service';
 
 @NgModule({
   declarations: [
@@ -82,9 +84,10 @@ import { FarReferencesComponent } from './action-tracker/active-action/create-pr
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [FetchDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
