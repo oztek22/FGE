@@ -1,0 +1,32 @@
+@import "../../../../../variables.scss";
+.far-references-container{
+  width:100%;
+}
+.far-references-title{
+  font-size: 12px;
+  color:$black-2;
+  font-family: "AvenirNextLTPro-Demi";
+  padding:0 0 20px;
+}
+.far-references-item{
+  display: flex;
+  align-items: flex-start;
+  padding:0 0 16px;
+}
+.far-no{
+  height:24px;
+  width:24px;
+  flex:0 0 24px;
+  background: $ice-blue-two;
+  border-radius: 50%;
+  color:$black-2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.far-text{
+font-family: "Avenir-Roman";
+font-size:14px;
+color:$black-6;
+padding:0 0 0 8px;
+}

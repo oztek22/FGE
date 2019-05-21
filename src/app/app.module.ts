@@ -38,6 +38,7 @@ import { McqComponent } from './action-tracker/active-action/create-pr/mcq/mcq.c
 import { NaicsCodeComponent } from './action-tracker/active-action/create-pr/naics-code/naics-code.component';
 import { CalendarTypeComponent } from './action-tracker/active-action/create-pr/calendar-type/calendar-type.component';
 import { UploadFileComponent } from './action-tracker/active-action/create-pr/upload-file/upload-file.component';
+import { FarReferencesComponent } from './action-tracker/active-action/create-pr/far-references/far-references.component';
 
 @NgModule({
   declarations: [
@@ -76,7 +77,8 @@ import { UploadFileComponent } from './action-tracker/active-action/create-pr/up
     McqComponent,
     NaicsCodeComponent,
     CalendarTypeComponent,
-    UploadFileComponent
+    UploadFileComponent,
+    FarReferencesComponent
   ],
   imports: [
     BrowserModule,
