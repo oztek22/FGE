@@ -20,6 +20,11 @@
     }
   }
 }
+.taskmodal-editable-header {
+  &:focus {
+    outline: none;
+  }
+}
 .task-modal-dialog {
   background: #ffffff;
   border-radius: 4px;
@@ -74,7 +79,8 @@
   padding: 0 24px 0 0;
 }
 .body-list-submenu {
-  width: 100%;
+  min-width: 100%;
+  width: 120px;
   background: #ffffff;
   box-shadow: 0 3px 12px 2px rgba(0, 0, 0, 0.1);
   border-radius: 4px;

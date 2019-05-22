@@ -8,12 +8,12 @@
   </div>
     <div class="main_tasks_section_inner">
       <div class="main_tasks_col" *ngFor="let taskColumn of taskList">
-        <app-slack-task-column [taskColumn]="taskColumn"></app-slack-task-column>
+        <app-slack-task-column (addTask)="addNewTask($event)" [taskColumn]="taskColumn" (openTaskModal)="openTaskModal($event, taskColumn)"></app-slack-task-column>
       </div>
     </div>
   </div>
 </div>
 
 <div *ngIf="taskModal">
-    <app-slack-new-task (closeModal)="closeModal()"></app-slack-new-task>
+    <app-slack-new-task [isNewTask]="isNewTask" (updateTask)="saveTask($event)" [taskList]="taskList"  [taskStatus]="taskStatus" [task]="task" (closeModal)="closeModal()"></app-slack-new-task>
 </div>

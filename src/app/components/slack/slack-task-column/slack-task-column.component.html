@@ -5,8 +5,8 @@
       <img src="../../../../assets/images/three_dot_image.svg" alt="" />
     </div>
   </div>
-  <div *ngFor="let task of taskColumn.subTasks">
+  <div *ngFor="let task of taskColumn.subTasks" (click)="openTask(task)">
     <app-slack-task [task]="task"></app-slack-task>
   </div>
-  <div class="task_list_card_add_btn"><button>Add a Task</button></div>
+  <div class="task_list_card_add_btn"><button (click)="addTask.emit(taskColumn.label)">Add a Task</button></div>
 </div>

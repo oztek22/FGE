@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-slack-task-column',
@@ -8,10 +8,18 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SlackTaskColumnComponent implements OnInit {
   @Input()
   taskColumn;
+  @Output()
+  openTaskModal = new EventEmitter<any>();
+  @Output()
+  addTask = new EventEmitter<any>();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  openTask(task) {
+    this.openTaskModal.emit(task);
   }
 
 }

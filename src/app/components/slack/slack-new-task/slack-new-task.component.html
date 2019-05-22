@@ -2,18 +2,19 @@
   <div class="task-modal-dialog">
     <div class="task-modal-header">
       <div class="taskmodal-header-title">
-        <h3>Untitled Task</h3>
+        <h3><div class="taskmodal-editable-header" contenteditable="true" 
+          [textContent]="task.label" (input)="task.label=$event.target.textContent"></div></h3>
       </div>
     </div>
     <div class="task-modal-body">
       <div class="body-list">
         <div class="body-list-title">in list</div>
         <div class="body-list-dropdown">
-          <div class="body-list-status">In Progress</div>
-          <div class="body-down-arrow"><img src="../../../../assets/images/down-arrow.jpeg" /></div>
-          <ul class="body-list-submenu">
-            <li class="body-list-submenu-item">Pending</li>
-            <li class="body-list-submenu-item">Approve</li>
+          <div class="body-list-status"  (click)="openType = !openType">{{taskStatus}}</div>
+          <div class="body-down-arrow" (click)="openType = !openType"><img src="../../../../assets/images/down-arrow.jpeg" /></div>
+          
+        <ul class="body-list-submenu" [class.open]="openType">
+            <li class="body-list-submenu-item" *ngFor="let item of taskList" (click)="tastStatusChanged(item)">{{item.label}}</li>
           </ul>
         </div>
       </div>
@@ -23,7 +24,7 @@
             <div class="description-comment">
               <div class="description-comment-title">Description</div>
               <div class="description-text-area">
-                <textarea placeholder="Add a more detailed description.."></textarea>
+                <textarea placeholder="Add a more detailed description.." [(ngModel)]="task.description"></textarea>
               </div>
             </div>
             <div class="user-activity">
@@ -50,14 +51,14 @@
             <div class="add-to-tak-title">ADD TO TASK</div>
             <div class="button-list">
               <div class="button-items">
-                <ul class="body-list-submenu open">
-                  <li class="body-list-submenu-item">Pending</li>
-                  <li class="body-list-submenu-item">Approve</li>
+                <ul class="body-list-submenu" [class.open]="showMember">
+                  <li class="body-list-submenu-item">a</li>
+                  <li class="body-list-submenu-item">b</li>
                 </ul>
-                <div class="button-img">
+                <div class="button-img" (click)="showMember = !showMember">
                   <img src="../../../../assets/images/user.jpeg" />
                 </div>
-                <div class="button-text">Members</div>
+                <div class="button-text" (click)="showMember = !showMember">Members</div>
               </div>
             </div>
           </div>
@@ -67,7 +68,7 @@
     <div class="task-modal-footer">
       <div class="footer-buttons">
         <button class="outline-btn-med" (click)="closeTask()">Cancel</button>
-        <button class="secondary_blue_btn" (click)="saveTask()">Create</button>
+        <button class="secondary_blue_btn" (click)="saveTask()">{{isNewTask? 'Create' : 'Save'}}</button>
       </div>
     </div>
   </div>

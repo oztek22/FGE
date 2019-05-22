@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-slack-new-task',
@@ -6,9 +6,20 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./slack-new-task.component.scss']
 })
 export class SlackNewTaskComponent implements OnInit {
+  openType = false;
   @Output()
   closeModal = new EventEmitter<any>();
-
+  @Input()
+  task;
+  @Input()
+  isNewTask;
+  @Input()
+  taskStatus;
+  @Input()
+  taskList;
+  
+  @Output()
+  updateTask = new EventEmitter<any>();
   constructor() { }
 
   ngOnInit() {
@@ -19,7 +30,12 @@ export class SlackNewTaskComponent implements OnInit {
   }
 
   saveTask() {
+    this.updateTask.emit({task: this.task, taskStatus: this.taskStatus});
+  }
 
+  tastStatusChanged(item) {
+    this.taskStatus = item.label;
+    this.openType = false;
   }
 
 }
