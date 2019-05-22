@@ -22,28 +22,29 @@
           </div>
           <div class="two_col_list_row">
             <div class="two_col_list_label">Contracting Vehicle:</div>
-            <div class="two_col_list_value">Navy SeaPort-E NexGen</div>
+            <div class="two_col_list_value">{{strategy?.values.contractingVehicle}}</div>
           </div>
           <div class="two_col_list_row">
             <div class="two_col_list_label">Funding Type:</div>
-            <div class="two_col_list_value">MILCON</div>
+            <div class="two_col_list_value">{{strategy?.values.fundingType}}</div>
           </div>
 
           <div class="two_col_list_row">
             <div class="two_col_list_label">Target Date:</div>
-            <div class="two_col_list_value"></div>
+            <div class="two_col_list_value">{{strategy?.values.targetDate}}</div>
           </div>
 
           <div class="two_col_list_row">
             <div class="two_col_list_label">Set Aside:</div>
-            <div class="two_col_list_value">HUBZone</div>
+            <div class="two_col_list_value">{{strategy?.values.setAside}}</div>
           </div>
 
           <div class="two_col_list_row">
             <div class="two_col_list_label">Certifications Required:</div>
-            <div class="two_col_list_value">
-              1. TOP SECRET FCL <br />
-              2. MILCON BONDING <br />3. CERTIFIED HUBZONE
+            <div class="two_col_list_value" *ngIf="strategy && strategy.values.certificationsRequired">
+              <div *ngFor="let certification of strategy.values.certificationsRequired; let i = index;">
+                {{i+1}}. {{certification}}
+              </div>
             </div>
           </div>
         </div>
@@ -60,48 +61,14 @@
               RESPONSE
             </div>
           </div>
-          <div class="two_col_list_row">
-            <div class="two_col_list_label">Contracting Officer</div>
-            <div class="two_col_list_value">Marie Gosnell</div>
+          <div class="two_col_list_row" *ngFor="let item of strategy.team">
+            <div class="two_col_list_label">{{item?.desig}}</div>
+            <div class="two_col_list_value">{{item?.name}}</div>
             <div class="two_col_list_response yes">
-              <img src="../../../assets/images/circle-ok.svg" alt="" />
-              <span>Yes</span>
-            </div>
-          </div>
-
-          <div class="two_col_list_row">
-            <div class="two_col_list_label">Contracting Specialist</div>
-            <div class="two_col_list_value">Tori Caputo</div>
-            <div class="two_col_list_response yes">
-              <img src="../../../assets/images/circle-ok.svg" alt="" />
-              <span>Yes</span>
-            </div>
-          </div>
-
-          <div class="two_col_list_row">
-            <div class="two_col_list_label">Legal</div>
-            <div class="two_col_list_value">Shawna Howell</div>
-            <div class="two_col_list_response pending">
-              <img src="../../../assets/images/time-gray.svg" alt="" />
-              <span>Pending</span>
-            </div>
-          </div>
-
-          <div class="two_col_list_row">
-            <div class="two_col_list_label">Program Office</div>
-            <div class="two_col_list_value">John Blake</div>
-            <div class="two_col_list_response no">
-              <img src="../../../assets/images/no-icon.svg" alt="" />
-              <span>No</span>
-            </div>
-          </div>
-
-          <div class="two_col_list_row">
-            <div class="two_col_list_label">Budget Analyst</div>
-            <div class="two_col_list_value">Mark Waites</div>
-            <div class="two_col_list_response pending">
-              <img src="../../../assets/images/time-gray.svg" alt="" />
-              <span>Pending</span>
+              <img src="../../../assets/images/circle-ok.svg" alt="" *ngIf="item.response === 'Yes'"/>
+              <img src="../../../assets/images/no-icon.svg" alt="" *ngIf="item.response === 'No'"/>
+              <img src="../../../assets/images/time-gray.svg" alt="" *ngIf="item.response === 'Pending'"/>
+              <span>{{item?.response}}</span>
             </div>
           </div>
         </div>
