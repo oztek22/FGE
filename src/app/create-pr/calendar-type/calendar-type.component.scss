@@ -1,4 +1,4 @@
-@import "../../../../../variables.scss";
+@import "../../../variables.scss";
 .question-main {
     display: flex;
     max-width: 100%;
@@ -95,7 +95,7 @@
     padding: 5px 16px;
     line-height: 1;
     transition: all 0.3s;
-    background:url(../../../../../assets/images/datepicker.svg) right 20px center no-repeat #fff;
+    background:url(../../../assets/images/datepicker.svg) right 20px center no-repeat #fff;
 
 }
 ::-webkit-calendar-picker-indicator {

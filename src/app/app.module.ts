@@ -14,7 +14,7 @@ import { SlackTaskColumnComponent } from './components/slack/slack-task-column/s
 import { ConversationComponent } from './components/conversation/conversation.component';
 import { AcqPlanningComponent } from './acq-planning/acq-planning.component';
 import { ActiveActionComponent } from './action-tracker/active-action/active-action.component';
-import { CreatePrComponent } from './action-tracker/active-action/create-pr/create-pr.component';
+import { CreatePrComponent } from './create-pr/create-pr.component';
 import { HeaderComponent } from './header/header.component';
 import { SubHeaderComponent } from './sub-header/sub-header.component';
 import { MenuTabComponent } from './menu-tab/menu-tab.component';
@@ -31,15 +31,15 @@ import { DocumentTableComponent } from './components/document-table/document-tab
 import { StatusTrackerComponent } from './components/status-tracker/status-tracker/status-tracker.component';
 import { StatusBlockComponent } from './components/status-tracker/status-block/status-block.component';
 import { StatusTrackerTimelineComponent } from './components/status-tracker/status-tracker-timeline/status-tracker-timeline.component';
-import { Step1Component } from './action-tracker/active-action/create-pr/step1/step1.component';
-import { Step2Component } from './action-tracker/active-action/create-pr/step2/step2.component';
-import { TextInputComponent } from './action-tracker/active-action/create-pr/text-input/text-input.component';
-import { SingleDropdownComponent } from './action-tracker/active-action/create-pr/single-dropdown/single-dropdown.component';
-import { McqComponent } from './action-tracker/active-action/create-pr/mcq/mcq.component';
-import { NaicsCodeComponent } from './action-tracker/active-action/create-pr/naics-code/naics-code.component';
-import { CalendarTypeComponent } from './action-tracker/active-action/create-pr/calendar-type/calendar-type.component';
-import { UploadFileComponent } from './action-tracker/active-action/create-pr/upload-file/upload-file.component';
-import { FarReferencesComponent } from './action-tracker/active-action/create-pr/far-references/far-references.component';
+import { Step1Component } from './create-pr/step1/step1.component';
+import { Step2Component } from './create-pr/step2/step2.component';
+import { TextInputComponent } from './create-pr/text-input/text-input.component';
+import { SingleDropdownComponent } from './create-pr/single-dropdown/single-dropdown.component';
+import { McqComponent } from './create-pr/mcq/mcq.component';
+import { NaicsCodeComponent } from './create-pr/naics-code/naics-code.component';
+import { CalendarTypeComponent } from './create-pr/calendar-type/calendar-type.component';
+import { UploadFileComponent } from './create-pr/upload-file/upload-file.component';
+import { FarReferencesComponent } from './create-pr/far-references/far-references.component';
 import { FetchDataService } from './services/fetch-data.service';
 
 @NgModule({

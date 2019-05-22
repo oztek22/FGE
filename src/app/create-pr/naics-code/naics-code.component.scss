@@ -1,8 +1,11 @@
-@import "../../../../../variables.scss";
+@import "../../../variables.scss";
 .question-main {
     display: flex;
     max-width: 100%;
     margin: 0 auto;
+}
+  .answer-box {
+    padding-bottom: 115px;
 }
 .control-label {
     font-size: 12px;
@@ -38,18 +41,31 @@
     color:$black-1;
     font-family: "AvenirNextLTPro-Regular";
 }
-.col-6 {
-    flex-basis: 50%;
-    padding: 0 15px;
+  .form-group {
+    padding-bottom: 16px;
+}
+.form-row {
+    margin: 0 -8px;
+    display: flex;
+}
+
+.col-8 {
+    flex-basis: 75%;
+    padding: 0 8px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 0 8px;
 }
 
 .form-control {
     border-radius: 4px;
-    height: 37px;
-    border: 1px solid #dfe6ee;
+    height: 52px;
+    border: 1px solid transparent;
     display: block;
     width: 100%;
-    color: #757585;
+    color: #212126;
     font-size: 14px;
     font-weight: normal;
     padding: 5px 16px;
@@ -62,91 +78,25 @@
     border: 1px solid $cerulean;
 }
 
-
-/***** Radio Btn css ******/
-
-.radio-btn {
-    position: relative;
-    display: flex;
-    align-items: center;
+input::placeholder {
+    color: #aaa7b5;
 }
 
-.radio-btn input {
-    opacity: 0;
-    z-index: -1;
-    position: absolute;
+.relevant-link {
+    text-align: right;
 }
 
-.radio-btn input:checked ~ .radio-box:after {
-    opacity: 1;
-}
-
-.radio-btn input:checked ~ .radio-label {
-    color: $cerulean;
-}
-
-.radio-btn input:checked ~ .radio-box {
-    border-color: $cerulean;
-}
-
-.radio-btn .radio-box {
-    width: 18px;
-    height: 18px;
-    border: solid 1px #c2c2cc;
-    display: inline-block;
-    border-radius: 50%;
-    position: relative;
-}
-
-.radio-btn .radio-box:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    opacity: 0;
-    background: $cerulean;
-    transition: all 0.3s;
-    overflow: hidden;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-}
-
-.radio-label {
+.relevant-link a {
     font-size: 14px;
+    color: $cerulean;
     font-weight: normal;
-    line-height: 2.07;
-    letter-spacing: normal;
-    color: $black-1;
-    padding-left: 16px;
+    letter-spacing: 0.3px;
     transition: all 0.3s;
-      font-family: "Avenir-Roman";
 }
-
-.radio-listing p {
-    padding-bottom: 13px;
+.relevant-link a:hover {
+    color: $azure;
 }
-.radio-listing p:hover .radio-box {
-    border-color:  $cerulean;
-}
-
-.radio-listing p:hover .radio-label {
-    color:  $cerulean;
-}
-/****** Single Dropdown ******/
-
-.form-row {
-    margin: 0 -15px;
-    display: flex;
-}
-
-.radio-listing {
-    padding-top: 12px;
-}
-  .NextPrev-Nav {
+    .NextPrev-Nav {
     display: flex;
     justify-content: space-between;
 }
@@ -171,4 +121,3 @@
 .next-arrow span {
     padding-left: 11px;
 }
-
