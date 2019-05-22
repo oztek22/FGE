@@ -1,13 +1,9 @@
 <div class="task_list_card">
-  <div class="task_list_card_title">Create RFI Draft</div>
+  <div class="task_list_card_title">{{task?.label}}</div>
   <div class="task_list_card_meta_row">
-    <div class="task_list_card_meta_date">May 28, 2019</div>
+    <div class="task_list_card_meta_date">{{task?.createdAt}}</div>
     <div class="task_list_card_meta_user">
-      <span><img src="../../../../assets/images/user-photo.png" alt="" />
-      </span>
-      <span><img src="../../../../assets/images/user-photo.png" alt="" />
-      </span>
-      <span><img src="../../../../assets/images/user-photo.png" alt="" />
+      <span *ngFor="let user of task.activeMembers"><img src="../../../../assets/images/user-photo.png" alt="" />
       </span>
     </div>
   </div>

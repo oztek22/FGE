@@ -7,17 +7,8 @@
   </div>
   </div>
     <div class="main_tasks_section_inner">
-      <div class="main_tasks_col">
-        <app-slack-task-column></app-slack-task-column>
-      </div>
-      <div class="main_tasks_col">
-        <app-slack-task-column></app-slack-task-column>
-      </div>
-      <div class="main_tasks_col">
-        <app-slack-task-column></app-slack-task-column>
-      </div>
-      <div class="main_tasks_col">
-        <app-slack-task-column></app-slack-task-column>
+      <div class="main_tasks_col" *ngFor="let taskColumn of taskList">
+        <app-slack-task-column [taskColumn]="taskColumn"></app-slack-task-column>
       </div>
     </div>
   </div>

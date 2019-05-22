@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-slack-task',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slack-task.component.scss']
 })
 export class SlackTaskComponent implements OnInit {
+  @Input()
+  task;
 
   constructor() { }
 
