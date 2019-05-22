@@ -28,10 +28,11 @@
         <div class="question-main">
 
           <div class="question-box">
+            <span class="question-no"> Question {{currentIndex + 1}} of {{questionSet.length}}</span>
             <div *ngIf="questionSet[currentIndex].type === 'text'">
               <app-text-input></app-text-input>
             </div>
-            <div *ngIf="questionSet[currentIndex].type === 'NAICS'">
+            <div *ngIf="questionSet[currentIndex].type === 'naics'">
               <app-naics-code></app-naics-code>
             </div>
             <div *ngIf="questionSet[currentIndex].type === 'mcq'">
@@ -48,9 +49,9 @@
             </div>
 
             <div class="NextPrev-Nav">
-              <a class="prev-arrow"><span> <img src="../../assets/images/prev.svg" alt="Next" /></span> Previous</a>
+              <a class="prev-arrow" (click)="previousQuestion()"><span> <img src="../../assets/images/prev.svg" alt="Next" /></span> Previous</a>
               <button class="outline-btn-med">Save and Exit</button>
-              <a class="next-arrow">Next <span> <img src="../../assets/images/next.svg" alt="Next" /></span></a>
+              <a class="next-arrow" (click)="nextQuestion()">Next <span> <img src="../../assets/images/next.svg" alt="Next" /></span></a>
             </div>
           </div>
         </div>

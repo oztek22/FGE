@@ -137,7 +137,21 @@ width:100%;
   width: 100%;
 }
 
+.question-no {
+  font-size: 12px;
+  color: $black-3;
+  letter-spacing: 1px;
+  padding-bottom: 12px;
+  font-family: "AvenirNextLTPro-Demi";
+  line-height: 16px;
+  text-transform: uppercase;
+  display: block;
+}
+
 /**** Navigation arrow Css ****/
+.next-arrow, .prev-arrow {
+  cursor: pointer;
+}
 
 .NextPrev-Nav {
   display: flex;

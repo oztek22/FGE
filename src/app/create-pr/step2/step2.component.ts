@@ -18,4 +18,18 @@ export class Step2Component implements OnInit {
   ngOnInit() {
   }
 
+  nextQuestion() {
+    if (this.currentIndex === this.questionSet.length - 1) {
+      return;
+    }
+    this.currentIndex++;
+  }
+
+  previousQuestion() {
+    if (this.currentIndex < 0) {
+      return;
+    }
+    this.currentIndex--;
+  }
+
 }
