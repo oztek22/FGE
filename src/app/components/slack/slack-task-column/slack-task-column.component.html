@@ -1,12 +1,15 @@
 <div class="slack_new_task__main_card">
-  <div class="slack_new_task__title_row">
+  <div class="slack_new_task__title_row"  (drop)="dropAbove($event)" (dragover)="allowDrop($event)">
     <div class="slack_new_task__title">{{taskColumn?.label}}</div>
     <div class="options_three_dots">
       <img src="../../../../assets/images/three_dot_image.svg" alt="" />
     </div>
   </div>
-  <div *ngFor="let task of taskColumn.subTasks" (click)="openTask(task)">
+  <div *ngFor="let task of taskColumn.subTasks"
+    (drop)="drop($event)" (dragover)="allowDrop($event)"
+    [id]="task.slug" draggable="true" (dragstart)="drag($event, task)" (click)="openTask(task)">
     <app-slack-task [task]="task"></app-slack-task>
   </div>
-  <div class="task_list_card_add_btn"><button (click)="addTask.emit(taskColumn.label)">Add a Task</button></div>
+  <div  (drop)="dropBelow($event)" (dragover)="allowDrop($event)"
+   class="task_list_card_add_btn"><button (click)="addTask.emit(taskColumn.label)">Add a Task</button></div>
 </div>

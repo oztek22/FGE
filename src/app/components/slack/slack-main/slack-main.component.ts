@@ -75,8 +75,20 @@ export class SlackMainComponent implements OnInit {
   }
 
   getTaskIndex(parent, taskSlug) {
-    return parent.findIndex((e) => {
+    return parent.subTasks.findIndex((e) => {
       return e.slug === taskSlug;
+    });
+  }
+
+  getTaskParent(taskSlug) {
+    return this.taskList.find((e) => {
+      let isTaskExist = false;
+      e.subTasks.forEach(element => {
+        if (element.slug === taskSlug) {
+          isTaskExist = true;
+        }
+      });
+      return isTaskExist;
     });
   }
 
@@ -87,13 +99,13 @@ export class SlackMainComponent implements OnInit {
     }
     const columnIndex = this.getTaskColumnIndex(event.taskStatus);
     this.taskList[columnIndex].subTasks.unshift(event.task);
-    localStorage.setItem('taskList', JSON.stringify(this.taskList));
+    this.saveTasks(this.taskList);
     this.closeModal();
   }
 
   updateTask(event) {
     const originalIndex = this.getTaskColumnIndex(this.originalTaskStatus);
-    const originalTaskIndex = this.getTaskIndex(this.taskList[originalIndex].subTasks, event.task.slug);
+    const originalTaskIndex = this.getTaskIndex(this.taskList[originalIndex], event.task.slug);
     if (event.taskStatus !== this.originalTaskStatus) {
       this.taskList[originalIndex].subTasks.splice(originalTaskIndex, 1);
       const newIndex = this.getTaskColumnIndex(event.taskStatus);
@@ -101,8 +113,36 @@ export class SlackMainComponent implements OnInit {
     } else {
       this.taskList[originalIndex].subTasks[originalTaskIndex] = event.task;
     }
-    localStorage.setItem('taskList', JSON.stringify(this.taskList));
+    this.saveTasks(this.taskList);
     this.closeModal();
+  }
+
+  reArrangeTask(event) {
+    console.log(event);
+    const destinationIndex = this.getTaskColumnIndex(event.destination.taskStatus);
+    const sourceParent = this.getTaskParent(event.source.task.slug);
+    const sourceTaskIndex = this.getTaskIndex(sourceParent, event.source.task.slug);
+    if (sourceParent !== this.taskList[destinationIndex]) {
+      sourceParent.subTasks.splice(sourceTaskIndex, 1);
+      if (event.destination.index < this.taskList[destinationIndex].subTasks.length) {
+        this.taskList[destinationIndex].subTasks.splice(event.destination.index, 0, event.source.task);
+      } else {
+        this.taskList[destinationIndex].subTasks.push(event.source.task);
+      }
+    } else {
+      sourceParent.subTasks.splice(sourceTaskIndex, 1);
+      const deltaIndex = sourceTaskIndex < event.destination.index ? 1 : 0;
+      if (event.destination.index < this.taskList[destinationIndex].subTasks.length) {
+        this.taskList[destinationIndex].subTasks.splice(event.destination.index - deltaIndex, 0, event.source.task);
+      } else {
+        this.taskList[destinationIndex].subTasks.push(event.source.task);
+      }
+    }
+    this.saveTasks(this.taskList);
+  }
+
+  saveTasks(taskList) {
+    localStorage.setItem('taskList', JSON.stringify(taskList));
   }
 
 }
