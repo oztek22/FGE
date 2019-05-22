@@ -2,7 +2,18 @@
   <div class="back_to_page" (click)="backToTracker()">
     Back to Action Tracker
   </div>
+  <div class="mt-40">
+    <div class="content-title">Create New PR</div>
+  </div>
+  <div class="mt-40">
+    <app-step1 [(title)]="title" [(id)]="id"></app-step1>
+  </div>
+  <app-step2 [questionSet]="questionSet" [currentIndex]="currentIndex" [references]="references"></app-step2>
 
-  <app-step1></app-step1>
-  <app-step2></app-step2>
+  <div class="similar-contract-table">
+    <div class="content-title">Similar Contracting Actions</div>
+    <div class="table-main">
+      <app-table [headerData]="table.headerData" [tableData]="table.tableData" [tableFooter]="null"></app-table>
+    </div>
+  </div>
 </div>

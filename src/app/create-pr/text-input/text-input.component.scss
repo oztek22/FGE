@@ -1,20 +1,8 @@
 @import "../../../variables.scss";
-.question-main {
-    display: flex;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
 
 /***-------------------- default Box css  ---------------*/
 
-.question-box {
-    padding: 29px 32px 20px 24px;
-    background: $ice-blue-two;
-    width: 100%;
-}
-
-.question-box .question-no {
+.question-no {
     font-size: 12px;
     color: $black-3;
     letter-spacing: 1px;
@@ -25,7 +13,7 @@
     display: block;
 }
 
-.question-box h2 {
+h2 {
     font-size: 18px;
     font-weight: normal;
     line-height: 22px;
@@ -40,33 +28,6 @@
 }
 
 
-/**** Navigation arrow Css ****/
-
-.NextPrev-Nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-.NextPrev-Nav a {
-    color: $cerulean;
-    font-family: "AvenirNextLTPro-Demi";
-    font-size: 14px;
-    letter-spacing: 0.3px;
-    display: flex;
-    align-items: center;
-}
-
-.NextPrev-Nav a span {
-    display: inline-flex;
-}
-
-.prev-arrow span {
-    padding-right: 11px;
-}
-
-.next-arrow span {
-    padding-left: 11px;
-}
 
 
 /**** Textarea Css *****/

@@ -3,9 +3,9 @@
   FAR References
 </div>
 <div class="far-references-list">
-  <div class="far-references-item">
-    <div class="far-no">1</div>
-    <div class="far-text"><div>Wireless Carrier<div><div> Services - AT&T</div></div>
+  <div class="far-references-item" *ngFor="let reference of references; let i = index;">
+    <div class="far-no">{{i+1}}</div>
+    <div class="far-text"><div>{{reference}}</div></div>
   </div>
 </div>
 </div>

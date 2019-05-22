@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-far-references',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./far-references.component.scss']
 })
 export class FarReferencesComponent implements OnInit {
+  @Input()
+  references;
 
   constructor() { }
 
   ngOnInit() {
+    console.log(this.references);
   }
 
 }
