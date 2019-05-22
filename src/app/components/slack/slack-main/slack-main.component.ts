@@ -47,10 +47,17 @@ export class SlackMainComponent implements OnInit {
     if (taskList) {
       this.taskList = JSON.parse(taskList);
     }
+    this.taskList.forEach(element => {
+      element.subTasks.forEach(task => {
+        if (task.slug >= this.nextTaskSlug ) {
+          this.nextTaskSlug++;
+        }
+      });
+    });
   }
 
   addNewTask(taskStatus?) {
-    this.task = { label: 'new task', createdAt: moment().format('MMM DD, YYYY'), description: '', activeMembers: ['a'] };
+    this.task = {slug: this.nextTaskSlug, label: 'new task', createdAt: moment().format('MMM DD, YYYY'), description: '', activeMembers: ['a'] };
     this.taskStatus = taskStatus? taskStatus :this.taskList[0].label;
     this.isNewTask = true;
     this.taskModal = true;

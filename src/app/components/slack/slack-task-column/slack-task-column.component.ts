@@ -24,6 +24,12 @@ export class SlackTaskColumnComponent implements OnInit {
     this.openTaskModal.emit(task);
   }
 
+  getSubTaskIndex(slug) {
+    return this.taskColumn.subTasks.findIndex((e)=>{
+      return e.slug == slug;
+    });
+  }
+
   allowDrop(ev) {
     ev.preventDefault();
   }
@@ -36,7 +42,24 @@ export class SlackTaskColumnComponent implements OnInit {
     ev.preventDefault();
     const data = ev.dataTransfer.getData('task');
     console.log(ev.target);
+    let target = ev.target;
+    while(!target.id) {
+      target = target.parentNode;
+      console.log(target);
+    }
+    console.log(target.id);
+    console.log(this.getSubTaskIndex(target.id));
     console.log(data);
+    this.reArrangeTask.emit(
+      {
+        destination: {
+          taskStatus: this.taskColumn.label,
+          index: this.getSubTaskIndex(target.id)
+        },
+        source: {
+          task: JSON.parse(data)
+        }
+      });
   }
 
   dropAbove(ev) {
