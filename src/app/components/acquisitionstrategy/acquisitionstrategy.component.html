@@ -64,7 +64,7 @@
           <div class="two_col_list_row" *ngFor="let item of strategy.team">
             <div class="two_col_list_label">{{item?.desig}}</div>
             <div class="two_col_list_value">{{item?.name}}</div>
-            <div class="two_col_list_response yes">
+            <div class="two_col_list_response" [class.yes]="item.response === 'Yes'" [class.pending]="item.response === 'Pending'" [class.no]="item.response === 'No'">
               <img src="../../../assets/images/circle-ok.svg" alt="" *ngIf="item.response === 'Yes'"/>
               <img src="../../../assets/images/no-icon.svg" alt="" *ngIf="item.response === 'No'"/>
               <img src="../../../assets/images/time-gray.svg" alt="" *ngIf="item.response === 'Pending'"/>

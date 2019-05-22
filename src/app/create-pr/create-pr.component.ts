@@ -35,7 +35,7 @@ export class CreatePrComponent implements OnInit {
   }
 
   getData() {
-    this.title = 'Wireless Carrier Services - AT&T';
+    this.title = '';
     this.id = '46575758901';
   }
 

@@ -56,3 +56,7 @@
 .cursor-pointer {
   cursor: pointer;
 }
+tbody {
+  max-height: 370px;
+  overflow-y: auto;
+}
