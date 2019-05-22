@@ -6,6 +6,6 @@
     <app-status-tracker [timelineData]="timelineData" [isChangable]="false" [selectedIndex]="selectedTimeline"></app-status-tracker>
     <app-acquisitionstrategy [strategy]="strategy"></app-acquisitionstrategy>
     <app-slack-main></app-slack-main>
-    <app-document-table></app-document-table>
+    <app-document-table [tableData]="documentTable" (download)="downloadDocument($event)"></app-document-table>
     <app-conversation></app-conversation>
 </div>

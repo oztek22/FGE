@@ -22,27 +22,13 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Program Request</td>
-            <td>10/05/2019</td>
-            <td>Tori Caputo</td>
-            <td>Mark Waites</td>
+          <tr *ngFor="let item of tableData" (click)="downloadIt(item)">
+            <td>{{item?.name}}</td>
+            <td>{{item?.date}}</td>
+            <td>{{item?.uploadBy}}</td>
+            <td>{{item?.accessedBy}}</td>
             <td><img src="../../../assets/images/download.svg"/></td>
           </tr>
-          <tr>
-            <td>Program Request</td>
-            <td>10/05/2019</td>
-            <td>Tori Caputo</td>
-            <td>Mark Waites</td>
-            <td><img src="../../../assets/images/download.svg"/></td>
-          </tr>
-          <tr>
-              <td>IGCE</td>
-              <td>10/05/2019</td>
-              <td>Tori Caputo</td>
-              <td>Mark Waites</td>
-              <td><img src="../../../assets/images/download.svg"/></td>
-            </tr>
         </tbody>
       </table>
     </div>

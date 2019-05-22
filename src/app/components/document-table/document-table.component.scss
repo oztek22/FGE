@@ -58,9 +58,9 @@ color: #212125;
 }
 
 
-tr{
- 
-  &:last-child{
+tr {
+  cursor: pointer;
+  &:hover{
     background: $table-gray;
     td{
       color:$cerulean;

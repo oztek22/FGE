@@ -18,6 +18,8 @@ export class ActiveActionComponent implements OnInit {
 
   strategy;
 
+  documentTable;
+
   constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
@@ -26,6 +28,7 @@ export class ActiveActionComponent implements OnInit {
       this.getFundDetails();
       this.getTimelineData();
       this.getStrategy();
+      this.getDocuments();
     });
   }
 
@@ -83,8 +86,20 @@ export class ActiveActionComponent implements OnInit {
     };
   }
 
+  getDocuments() {
+    this.documentTable = [
+      {name: 'Program Request', date: '10/05/2019', uploadBy: 'Tori Caputo', accessedBy: 'Mark Waites'},
+      {name: 'Requirements', date: '15/05/2019', uploadBy: 'Tori Caputo', accessedBy: 'John Blake'},
+      {name: 'IGCE', date: '17/05/2019', uploadBy: 'Mark Waites', accessedBy: 'Tori Caputo'}
+    ];
+  }
+
   backToTracker() {
     this.router.navigate(['action-tracker']);
+  }
+
+  downloadDocument(document) {
+    console.log(document);
   }
 
 }
