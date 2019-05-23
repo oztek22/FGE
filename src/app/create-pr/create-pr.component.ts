@@ -43,14 +43,14 @@ export class CreatePrComponent implements OnInit {
     this.references = ['Wireless Carrier Services - AT&T', 'Wireless Carrier Services - AT&T', 'Wireless Carrier Services - AT&T', 'Wireless Carrier Services - AT&T'];
     this.currentIndex = 0;
     this.questionSet = [
-      { title: 'Objective', type: 'text', question: 'What is the Objective of this contract?' },
+      { title: 'Objective', type: 'text', slug: 'objective', question: 'What is the Objective of this contract?' },
       {
-        title: 'NAICS', type: 'naics',
+        title: 'NAICS', type: 'naics', slug: 'naics',
+        question: 'Please select the relevant NAICS code from the list given below',
         optionLabel: 'Enter the NAICS code', options: [
-          { label: '62 - Healthcare and Social Assistance', value: 1 },
-          { label: '60 - ', value: 2 }
-        ],
-        subOptionLabel: 'Enter the code'
+          '62 - Healthcare and Social Assistance',
+          '60 - '
+        ]
       },
       {
         title: 'Funding', type: 'mcq',

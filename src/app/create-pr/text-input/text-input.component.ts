@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-text-input',
@@ -6,6 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./text-input.component.scss']
 })
 export class TextInputComponent implements OnInit {
+  fieldText;
+  @Input()
+  data;
+  @Output()
+  fieldValueChange = new EventEmitter<any>();
+  @Input()
+  get fieldValue() {
+    return this.fieldText;
+  }
+  set fieldValue(val) {
+    this.fieldText = val;
+    this.fieldValueChange.emit(this.fieldText);
+  }
 
   constructor() { }
 

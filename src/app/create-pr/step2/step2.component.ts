@@ -12,6 +12,7 @@ export class Step2Component implements OnInit {
   currentIndex;
   @Input()
   references;
+  fieldValue;
 
   constructor() { }
 
@@ -19,6 +20,7 @@ export class Step2Component implements OnInit {
   }
 
   nextQuestion() {
+    console.log(this.fieldValue);
     if (this.currentIndex === this.questionSet.length - 1) {
       return;
     }

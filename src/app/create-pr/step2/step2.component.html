@@ -30,10 +30,10 @@
           <div class="question-box">
             <span class="question-no"> Question {{currentIndex + 1}} of {{questionSet.length}}</span>
             <div *ngIf="questionSet[currentIndex].type === 'text'">
-              <app-text-input></app-text-input>
+              <app-text-input [data]="questionSet[currentIndex]" [(fieldValue)]="fieldValue"></app-text-input>
             </div>
             <div *ngIf="questionSet[currentIndex].type === 'naics'">
-              <app-naics-code></app-naics-code>
+              <app-naics-code [data]="questionSet[currentIndex]" [(fieldValue)]="fieldValue"></app-naics-code>
             </div>
             <div *ngIf="questionSet[currentIndex].type === 'mcq'">
               <app-mcq></app-mcq>

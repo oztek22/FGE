@@ -1,10 +1,10 @@
-<h2>What is the Objective of this contract?</h2>
+<h2>{{data.question}}</h2>
 <div class="answer-box">
     <form>
         <div class="form-group">
             <label class="control-label">Response</label>
-            <textarea
-                class="textarea-control">Vestibulum non faucibus enim. Sed nec nulla elit. Donec auctor, nibh sit amet egestas rutrum, ipsum eros consectetur odio, id eleifend tellus nisl quis dolor. Cras eget euismod dolor, sed commodo arcu. Nunc volutpat elit eget velit pulvinar tristique. Praesent eget eros non ipsum interdum dignissim. Quisque dictum porttitor dui ac hendrerit. Donec id semper justo. Nulla in justo et ante condimentum imperdiet vel quis nulla.</textarea>
+            <textarea [(ngModel)]="fieldValue"
+                class="textarea-control" [name]="data.slug"></textarea>
         </div>
     </form>
 </div>
