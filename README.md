@@ -29,14 +29,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## remaining tasks
 
-### home
+### Pending
 - graph color code should be based on graph label
 - [i] table max-height: 360 and overflow
 - [i] add description to data management service
 - change color variable grapefruit and medium-green
 - Acquisition Strategy background grey
-- [i] header-doc should open iframe in whole page and vice versa.
 - Create New PR font change
 - [i] id should not be editable textbox but design should be samee.
 - [i] question text read.
 - [i] dropdown searchable and remove enter the code
+
+### Completed
+
+- [i] header-doc should open iframe in whole page and vice versa.

@@ -1,6 +1,11 @@
-<app-header></app-header>
-<app-sub-header></app-sub-header>
-<app-menu-tab></app-menu-tab>
+<app-header (switchView)="switchView()"></app-header>
+<div *ngIf="isIframeOpen">
+  <iframe width="100%" height="100%" frameborder="0" allowtransparency="true" id="displayIframe" name="iframe1"
+    [src]="iframeUrl | safe" style="height: 80vh;"></iframe>
+</div>
+<div *ngIf="!isIframeOpen">
+  <app-sub-header></app-sub-header>
+  <app-menu-tab></app-menu-tab>
 
-<router-outlet></router-outlet>
-
+  <router-outlet></router-outlet>
+</div>

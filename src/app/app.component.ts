@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'GrantManagement';
+  isIframeOpen = false;
+  iframeUrl = 'https://www.coralblockchain.io/';
+
+  switchView() {
+    this.isIframeOpen = !this.isIframeOpen;
+  }
+
 }
