@@ -30,10 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## remaining tasks
 
 ### Pending
-- graph color code should be based on graph label
-- change color variable grapefruit and medium-green
-- Acquisition Strategy background grey
-- Create New PR font change
+
 
 ### Completed
 
@@ -43,3 +40,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [i] add description to data management service
 - [i] question text read.
 - [i] dropdown searchable and remove enter the code
+- Create New PR font change
+- graph color code should be based on graph label
+- change color variable grapefruit and medium-green
+- Acquisition Strategy background grey

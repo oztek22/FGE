@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   isIframeOpen = false;
-  iframeUrl = 'https://www.coralblockchain.io/';
+  iframeUrl = 'https://public.tableau.com/profile/bfong#!/vizhome/SampleSuperstorePOC/FundingAllocationSummary';
 
   switchView() {
     this.isIframeOpen = !this.isIframeOpen;
