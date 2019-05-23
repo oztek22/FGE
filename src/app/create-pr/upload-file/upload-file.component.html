@@ -3,8 +3,8 @@
     <form>
 
         <div class="form-group">
-            <label class="upload-btn">
-                <input type="file" required />
+            <label class="upload-btn" (dragenter)="preventDefault($event)" (dragover)="preventDefault($event)" (drop)="dropDocument($event)">
+                <input type="file" [id]="data.slug" [name]="data.slug" (change)="uploadFile($event)"/>
                 <span>
                     <img src="../../assets/images/upload.svg" alt="Upload" />
                     Upload</span>

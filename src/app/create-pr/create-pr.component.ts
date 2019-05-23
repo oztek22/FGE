@@ -74,7 +74,7 @@ export class CreatePrComponent implements OnInit {
       },
       { title: 'Quantity', type: 'text', slug: 'quantity', question: 'What is the Quantity?' },
       { title: 'Period of Performance', type: 'calendar', slug: 'performance', question: 'What is the Period of Performance?' },
-      { title: 'Other Services', type: 'upload', question: 'What is the Objective of this contract?' }
+      { title: 'Other Services', type: 'upload', slug: 'service', question: 'What is the Objective of this contract?' }
     ];
   }
 

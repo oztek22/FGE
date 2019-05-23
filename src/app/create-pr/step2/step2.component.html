@@ -45,7 +45,7 @@
               <app-calendar-type [data]="questionSet[currentIndex]" [(fieldValue)]="fieldValue"></app-calendar-type>
             </div>
             <div *ngIf="questionSet[currentIndex].type === 'upload'">
-              <app-upload-file></app-upload-file>
+              <app-upload-file [data]="questionSet[currentIndex]" [(fieldValue)]="fieldValue"></app-upload-file>
             </div>
 
             <div class="NextPrev-Nav">
