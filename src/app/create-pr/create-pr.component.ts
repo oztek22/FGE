@@ -62,7 +62,8 @@ export class CreatePrComponent implements OnInit {
         ]
       },
       {
-        title: 'Location', type: 'dropdown',
+        title: 'Location', type: 'dropdown', slug: 'location',
+        question: 'What agency is this for?',
         optionLabel: 'Select the top level agency',
         subOptionLabel: 'Select the Sub level agency',
         options: [
@@ -71,8 +72,8 @@ export class CreatePrComponent implements OnInit {
           { value: 'Air Force', label: 'Department of the Air Force', subOptions: ['e', 'f'] }
         ]
       },
-      { title: 'Quantity', type: 'text', question: 'What is the Objective of this contract?' },
-      { title: 'Period of Performance', type: 'calendar', question: 'What is the Period of Performance?' },
+      { title: 'Quantity', type: 'text', slug: 'quantity', question: 'What is the Quantity?' },
+      { title: 'Period of Performance', type: 'calendar', slug: 'performance', question: 'What is the Period of Performance?' },
       { title: 'Other Services', type: 'upload', question: 'What is the Objective of this contract?' }
     ];
   }
