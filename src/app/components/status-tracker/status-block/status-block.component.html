@@ -17,7 +17,7 @@
                         <div class="status-user"><img src="../../../../assets/images/user-photo.png" /></div>
                         <div class="status-name-text">{{user.name}}</div>
                     </div>
-                    <div class="status-pending-dot pending"></div>
+                    <div class="status-pending-dot pending" [class.non-visited]="isNonVisited"></div>
                 </div>
             </div>
             <div class="status-pending-block" *ngIf="data.approved && data.approved.length">

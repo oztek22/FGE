@@ -84,6 +84,9 @@
     background: $black-4;
     &.pending {
       background: $grapefruit;
+      &.non-visited {
+        background: $black-5;
+      }
     }
     &.approve {
       background: $medium-green;

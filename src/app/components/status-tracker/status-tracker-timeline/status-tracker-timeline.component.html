@@ -13,7 +13,7 @@
                 <div class="process-text-title">{{data.header}}</div>
                 <div class="process-text-action">{{data.subHeader}}</div>
               </div>
-              <app-status-block [data]="data" *ngIf="isDetailed"></app-status-block>
+              <app-status-block [isNonVisited]="!this.isChangable && i > this.selectedIndex" [data]="data" *ngIf="isDetailed"></app-status-block>
           </a>
       </li>
   </ul>

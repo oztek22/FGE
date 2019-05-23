@@ -9,6 +9,8 @@ export class StatusBlockComponent implements OnInit {
 
   @Input()
   data;
+  @Input()
+  isNonVisited;
 
   constructor() { }
 
