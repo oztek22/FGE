@@ -34,8 +34,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - change color variable grapefruit and medium-green
 - Acquisition Strategy background grey
 - Create New PR font change
-- [i] question text read.
-- [i] dropdown searchable and remove enter the code
 
 ### Completed
 
@@ -43,3 +41,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [i] id should not be editable textbox but design should be same.
 - [i] table max-height: 360 and overflow
 - [i] add description to data management service
+- [i] question text read.
+- [i] dropdown searchable and remove enter the code
