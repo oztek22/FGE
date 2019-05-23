@@ -6,6 +6,7 @@
 .table {
   width: 100%;
   border-collapse: collapse;
+  position: relative;
 }
 .table thead {
   background: #ededf0;
@@ -57,6 +58,26 @@
   cursor: pointer;
 }
 tbody {
-  max-height: 370px;
+  max-height: 500px;
   overflow-y: auto;
+}
+// .thead, tbody, tr, td, th{
+//     box-sizing: border-box;
+//     display: block;}
+thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;/* even columns width , fix width of table too*/
+}
+  tbody{
+    display: block;
+  }
+.table tbody tr:last-child {
+  position: absolute;
+  bottom: 0px;
+  background: #fff;
+  width: calc(100% - 1em);
+}
+.table tbody tr:nth-last-child(2) {
+  margin-bottom: 60px;
 }

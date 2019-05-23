@@ -10,8 +10,8 @@
         <tr *ngFor="let obj of tableData" [class.cursor-pointer]="isClickable" (click)="tableDataClicked(obj)">
           <td *ngFor="let key of headerData" [class.red]="key.enableColorCode && obj[key.slug] < 0" [class.green]="key.enableColorCode && obj[key.slug] >= 0">{{obj[key.slug]}}</td>
         </tr>
-        <tr class="total" *ngIf="tableFooter">
-          <td *ngFor="let key of headerData">{{tableFooter[key.slug]}}</td>
+        <tr class="total" [hidden]="!tableFooter">
+          <td *ngFor="let key of headerData"><span *ngIf="tableFooter">{{tableFooter[key.slug]}}</span></td>
         </tr>
       </tbody>
     </table>
