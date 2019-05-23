@@ -10,7 +10,8 @@ export class ActiveActionComponent implements OnInit {
   id;
   funds = {
     requestedFunds: '-',
-    obligatedFund: '-'
+    obligatedFund: '-',
+    description: ''
   };
 
   timelineData;
@@ -65,6 +66,7 @@ export class ActiveActionComponent implements OnInit {
   getFundDetails() {
     this.funds.requestedFunds = '$4,20,00,000';
     this.funds.obligatedFund = '-';
+    this.funds.description = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s';
   }
 
   getStrategy() {
