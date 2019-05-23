@@ -6,9 +6,13 @@
         <div class="form-row">
             <div class="col-12">
                 <div class="form-group">
-                    <select class="form-control" [name]="data.slug" [(ngModel)]="fieldValue">
+                    <!-- <select class="form-control" [name]="data.slug" [(ngModel)]="fieldValue">
                         <option *ngFor="let item of data.options">{{item}}</option>
-                    </select>
+                    </select> -->
+                    <input type="text" class="form-control" placeholder="search item"/>
+                    <ul class="body-list-submenu open">
+                        <li  *ngFor="let item of data.options" class="body-list-submenu-item">{{item}}</li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -20,7 +20,6 @@
   padding: 16px;
 }
 .table th:first-child {
-  width: 15%;
   text-align: left;
 }
 .table th:last-child {
@@ -76,7 +75,7 @@ thead, tbody tr {
   position: absolute;
   bottom: 0px;
   background: #fff;
-  width: calc(100% - 1em);
+  // width: calc(100% - 1em);
 }
 .table tbody tr:nth-last-child(2) {
   margin-bottom: 60px;

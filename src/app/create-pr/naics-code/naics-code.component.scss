@@ -23,6 +23,7 @@ h2 {
 }
   .form-group {
     padding-bottom: 16px;
+    position: relative;
 }
 .form-row {
     margin: 0 -8px;
@@ -83,4 +84,38 @@ input::placeholder {
     .NextPrev-Nav {
     display: flex;
     justify-content: space-between;
+}
+.body-list-dropdown {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d8d8d8;
+  cursor: pointer;
+  position: relative;
+}
+.body-list-status {
+  color: $dark-grey-two;
+  font-size: 14px;
+  font-family: "AvenirNextLTPro-Demi";
+  padding: 0 24px 0 0;
+}
+.body-list-submenu {
+  min-width: 100%;
+  width: 120px;
+  background: #ffffff;
+  box-shadow: 0 3px 12px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  position: absolute;
+  top: auto;
+  left: 0;
+  display: none;
+  &.open {
+    display: block;
+  }
+.body-list-submenu-item {
+    list-style: none;
+    padding: 10px;
+    font-size: 14px;
+    font-family: "AvenirNextLTPro-Regular";
+    border-bottom: 1px solid #d8d8d8;
+  }
 }

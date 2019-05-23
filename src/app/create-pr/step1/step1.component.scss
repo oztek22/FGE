@@ -43,7 +43,17 @@
   display: flex;
   justify-content: space-between;
   border-radius: 4px;
+  align-items: flex-end;
 }
   .create-pr-item{
     flex:0 0 40%;
+  }
+  .id-no{
+        border: none;
+    border-bottom: 1px solid #aaa7b5;
+    padding: 0 0 7px;
+    color: #222f42;
+    font-size: 14px;
+    width: 100%;
+    outline: 0;
   }
