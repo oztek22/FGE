@@ -43,6 +43,7 @@ import { UploadFileComponent } from './create-pr/upload-file/upload-file.compone
 import { FarReferencesComponent } from './create-pr/far-references/far-references.component';
 import { FetchDataService } from './services/fetch-data.service';
 import { SafePipe } from './pipes/safe.pipe';
+import { SearchPipe } from './pipes/search.pipe';
 
 @NgModule({
   declarations: [
@@ -83,7 +84,8 @@ import { SafePipe } from './pipes/safe.pipe';
     CalendarTypeComponent,
     UploadFileComponent,
     FarReferencesComponent,
-    SafePipe
+    SafePipe,
+    SearchPipe
   ],
   imports: [
     BrowserModule,

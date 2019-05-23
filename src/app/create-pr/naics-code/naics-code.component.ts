@@ -6,6 +6,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./naics-code.component.scss']
 })
 export class NaicsCodeComponent implements OnInit {
+  searchData;
+  openDD = false;
   fieldText;
   @Input()
   data;
@@ -22,6 +24,13 @@ export class NaicsCodeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.searchData = this.fieldValue;
+  }
+
+  optionSelected(item) {
+    this.fieldValue = item;
+    this.searchData = item;
+    this.openDD = false;
   }
 
 }

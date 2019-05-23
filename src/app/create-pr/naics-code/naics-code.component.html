@@ -9,9 +9,9 @@
                     <!-- <select class="form-control" [name]="data.slug" [(ngModel)]="fieldValue">
                         <option *ngFor="let item of data.options">{{item}}</option>
                     </select> -->
-                    <input type="text" class="form-control" placeholder="search item"/>
-                    <ul class="body-list-submenu open">
-                        <li  *ngFor="let item of data.options" class="body-list-submenu-item">{{item}}</li>
+                    <input type="text" class="form-control" [name]="data.slug" [(ngModel)]="searchData" (focus)="openDD = true"/>
+                    <ul class="body-list-submenu" [class.open]="openDD">
+                        <li  *ngFor="let item of data.options | search: searchData" class="body-list-submenu-item" (click)="optionSelected(item)">{{item}}</li>
                     </ul>
                 </div>
             </div>
