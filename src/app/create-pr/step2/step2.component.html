@@ -42,7 +42,7 @@
               <app-single-dropdown [data]="questionSet[currentIndex]" [(fieldValue)]="fieldValue"></app-single-dropdown>
             </div>
             <div *ngIf="questionSet[currentIndex].type === 'calendar'">
-              <app-calendar-type></app-calendar-type>
+              <app-calendar-type [data]="questionSet[currentIndex]" [(fieldValue)]="fieldValue"></app-calendar-type>
             </div>
             <div *ngIf="questionSet[currentIndex].type === 'upload'">
               <app-upload-file></app-upload-file>

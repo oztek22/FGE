@@ -1,4 +1,4 @@
-<h2>What is the Period of Performance?</h2>
+<h2>{{data.question}}</h2>
 <div class="answer-box">
     <form>
 
@@ -7,13 +7,13 @@
             <div class="col-4">
                 <div class="form-group">
                     <label class="control-label">START DATE </label>
-                    <input class="date-control" type="date" placeholder="05-01-2019" />
+                    <input class="date-control" [name]="data.slug+'-start'" type="date" [value]="fieldData.start" (change)="updateStartDate($event)"/>
                 </div>
             </div>
             <div class="col-4">
                 <div class="form-group">
                     <label class="control-label">END DATE</label>
-                    <input class="date-control" type="date" placeholder="05-01-2019" />
+                    <input class="date-control" [name]="data.slug+'-end'" type="date" [value]="fieldData.end" (change)="updateEndDate($event)" />
                 </div>
             </div>
         </div>
@@ -21,12 +21,9 @@
             <div class="col-4">
                 <div class="form-group">
                     <label class="control-label">DURATION</label>
-                    <strong class="duration">29 Days</strong>
+                    <strong class="duration">{{this.fieldData.duration}} Days</strong>
                 </div>
             </div>
         </div>
-
-
-
     </form>
 </div>
