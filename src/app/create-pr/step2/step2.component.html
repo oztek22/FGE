@@ -36,7 +36,7 @@
               <app-naics-code [data]="questionSet[currentIndex]" [(fieldValue)]="fieldValue"></app-naics-code>
             </div>
             <div *ngIf="questionSet[currentIndex].type === 'mcq'">
-              <app-mcq></app-mcq>
+              <app-mcq [data]="questionSet[currentIndex]" [(fieldValue)]="fieldValue"></app-mcq>
             </div>
             <div *ngIf="questionSet[currentIndex].type === 'dropdown'">
               <app-single-dropdown></app-single-dropdown>

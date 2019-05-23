@@ -53,7 +53,7 @@ export class CreatePrComponent implements OnInit {
         ]
       },
       {
-        title: 'Funding', type: 'mcq',
+        title: 'Funding', type: 'mcq', slug: 'funding',
         question: 'It looks like that you are trying to procure a product/service to {%id1%}. Is that correct?',
         optionLabel: 'Select the correct response',
         options: [
