@@ -36,3 +36,9 @@
     
   }
 }
+.data-man-row{
+  display: flex;
+  .data-man-col{
+    flex:0 0 50%;
+  }
+}
