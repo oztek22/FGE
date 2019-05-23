@@ -39,7 +39,7 @@
               <app-mcq [data]="questionSet[currentIndex]" [(fieldValue)]="fieldValue"></app-mcq>
             </div>
             <div *ngIf="questionSet[currentIndex].type === 'dropdown'">
-              <app-single-dropdown></app-single-dropdown>
+              <app-single-dropdown [data]="questionSet[currentIndex]" [(fieldValue)]="fieldValue"></app-single-dropdown>
             </div>
             <div *ngIf="questionSet[currentIndex].type === 'calendar'">
               <app-calendar-type></app-calendar-type>

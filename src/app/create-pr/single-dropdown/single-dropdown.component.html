@@ -1,48 +1,25 @@
 <!-- Single Dropdown -->
-<h2>What agency is this for?</h2>
+<h2>{{data.question}}</h2>
 <div class="answer-box">
     <form>
         <div class="form-row">
             <div class="col-6">
                 <div class="form-group">
-                    <label class="control-label">Select the top level agency</label>
+                    <label class="control-label">{{data.optionLabel}}</label>
                     <div class="radio-listing">
-                        <p>
+                        <p *ngFor="let item of data.options">
                             <label class="radio-btn">
-                                <input type="radio" name="agency" /><span class="radio-box"></span> <span
-                                    class="radio-label">Department of the Army</span></label>
-                        </p>
-                        <p>
-                            <label class="radio-btn">
-                                <input type="radio" name="agency" /><span class="radio-box"></span> <span
-                                    class="radio-label">Department of the Navy</span></label>
-                        </p>
-                        <p>
-                            <label class="radio-btn">
-                                <input type="radio" name="agency" /><span class="radio-box"></span> <span
-                                    class="radio-label">Department of the Air Force</span></label>
-                        </p>
-                        <p>
-                            <label class="radio-btn">
-                                <input type="radio" name="agency" /><span class="radio-box"></span> <span
-                                    class="radio-label">Other Unified Military Commands</span></label>
-                        </p>
-                        <p>
-                            <label class="radio-btn">
-                                <input type="radio" name="agency" /><span class="radio-box"></span> <span
-                                    class="radio-label">Other DoD Agencies</span></label>
+                                <input type="radio" [name]="data.slug" [value]="item.subOptions" [(ngModel)]="subOptions" /><span class="radio-box"></span> <span
+                                    class="radio-label">{{item?.label}}</span></label>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-6">
                 <div class="form-group">
-                    <label class="control-label">Select the top level agency</label>
-                    <select class="form-control">
-                        <option>Select a sub-level agency</option>
-                        <option>agency</option>
-                        <option>agency</option>
-                        <option>agency</option>
+                    <label class="control-label">{{data.subOptionLabel}}</label>
+                    <select class="form-control" [name]="data.slug + '-dd'" [(ngModel)]="fieldValue">
+                        <option *ngFor="let item of subOptions">{{item}}</option>
                     </select>
                 </div>
             </div>
