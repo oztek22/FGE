@@ -56,7 +56,8 @@
 .bar-col, .bar-chart-text-row {
   &:first-child {
     .line-graph, .chart-dot {
-    background: $ice-blue-two;
+    // background: $ice-blue-two;
+    background: #002c54;
   }}
   &:nth-child(2) {
     .line-graph, .chart-dot {

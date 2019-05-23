@@ -2,7 +2,8 @@
   padding: 0px 0px 40px 0px;
 
   .heading_with_edit {
-    padding: 0px 0px 26px 0px;
+    padding: 13px 5px 13px 5px;
+    background-color: #ECECEC;
   }
 
   .two_col_list {
@@ -32,6 +33,7 @@
   .Acquisition_Strategy_row {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 
     .Acquisition_Strategy_col {
       flex: 0 0 48%;

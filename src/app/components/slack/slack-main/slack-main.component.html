@@ -1,11 +1,11 @@
 <div class="fixed-width">
   <div class="main_tasks_section">
-  <div class="main_tasks_section_title">
-    <h3>Tasks</h3>
-    <div class="main_tasks_section_button">
-    <button class="blue_btn_icon" (click)="addNewTask()">New Task</button>
-  </div>
-  </div>
+    <div class="main_tasks_section_title">
+      <h3>Tasks</h3>
+      <div class="main_tasks_section_button">
+        <button class="blue_btn_icon" (click)="addNewTask()">New Task</button>
+      </div>
+    </div>
     <div class="main_tasks_section_inner">
       <div class="main_tasks_col" *ngFor="let taskColumn of taskList">
         <app-slack-task-column (reArrangeTask)="reArrangeTask($event)" (addTask)="addNewTask($event)" [taskColumn]="taskColumn" (openTaskModal)="openTaskModal($event, taskColumn)"></app-slack-task-column>

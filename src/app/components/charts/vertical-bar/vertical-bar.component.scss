@@ -81,16 +81,19 @@
 .bar-col, .bar-chart-botton-info {
   &:first-child {
     .line-graph, .chart-dot {
-    background: $ice-blue-two;
+    // background: $ice-blue-two;
+    background: #002c54;
   }}
   &:nth-child(2) {
     .line-graph, .chart-dot {
-      background: $azure;
+      // background: $azure;
+      background: #66a5ad;
     }
   }
   &:nth-child(3) {
     .line-graph, .chart-dot {
-      background: $cerulean;
+      // background: $cerulean;
+      background: #ed5752;
     }
   }
   &:nth-child(4) {
